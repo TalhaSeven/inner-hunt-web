@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -8,6 +9,7 @@ import AxeProvider from "@/components/providers/AxeProvider";
 import VercelAnalytics from "@/components/providers/VercelAnalytics";
 
 const locales = ["tr", "en", "de", "es"] as const;
+const gaId = "G-Q1QYB1VHRP";
 
 const amiri = Amiri({
   variable: "--font-amiri",
@@ -146,6 +148,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <AxeProvider />
         <VercelAnalytics />
+        <GoogleAnalytics gaId={gaId} />
       </body>
     </html>
   );
