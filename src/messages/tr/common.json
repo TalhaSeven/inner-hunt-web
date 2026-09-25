@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Inner Hunt — Esmâü'l-Hüsnâ ile Günlük Tefekkür",
+    "description": "Inner Hunt ile Esmâü'l-Hüsnâ üzerine her gün tefekkür et: günün esması, hâline uygun isimler, Kur'an'dan ayetler ve günlük hatırlatıcı. Ücretsiz ve reklamsız."
+  },
+  "nav": {
+    "main": "Ana menü",
+    "home": "Inner Hunt ana sayfa",
+    "download": "İndir",
+    "skipToContent": "İçeriğe geç"
+  },
+  "langSwitcher": {
+    "label": "Dil seçimi",
+    "tr": "Türkçe",
+    "en": "English"
+  },
+  "footer": {
+    "tagline": "Esmâü'l-Hüsnâ ile günlük tefekkür.",
+    "linksLabel": "Site bağlantıları",
+    "privacy": "Gizlilik",
+    "support": "Destek",
+    "esma": "Esmalar",
+    "contact": "İletişim",
+    "trademarkApple": "Apple, Apple logosu ve App Store, Apple Inc.'in ABD ve diğer ülkelerde tescilli ticari markalarıdır.",
+    "trademarkGoogle": "Google Play ve Google Play logosu Google LLC'nin ticari markalarıdır."
+  },
+  "badges": {
+    "groupLabel": "Uygulamayı indirin",
+    "appStore": "App Store'dan indirin",
+    "googlePlay": "Google Play'den alın",
+    "comingSoon": "Yakında",
+    "comingSoonLabel": "{store} — yakında"
+  }
+}

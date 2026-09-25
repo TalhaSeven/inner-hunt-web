@@ -1,0 +1,34 @@
+{
+  "A": {
+    "name": "Dengeli · Canlı",
+    "tags": "Canlı · Pozitif · Üretken"
+  },
+  "B": {
+    "name": "Sakin · Odaklanmış",
+    "tags": "Güvenilir · Odaklanmış · Huzurlu"
+  },
+  "C": {
+    "name": "Derin · Zarif",
+    "tags": "Zarif · Güçlü · Gizemli"
+  },
+  "D": {
+    "name": "Duygusal · Sevgi Dolu",
+    "tags": "Şefkatli · Sevgi Dolu · Yumuşak"
+  },
+  "E": {
+    "name": "Hüzünlü · Kırılgan",
+    "tags": "Hüzünlü · Kırılgan · Duyarlı"
+  },
+  "F": {
+    "name": "Endişeli · Tedirgin",
+    "tags": "Kaygılı · Düşünceli · Hassas"
+  },
+  "G": {
+    "name": "Yorgun · Tükenmiş",
+    "tags": "Yorgun · Bunalmış · Sessiz"
+  },
+  "H": {
+    "name": "Umutlu · Teslimiyetli",
+    "tags": "Umutlu · Bekleyişte · Ferah"
+  }
+}

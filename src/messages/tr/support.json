@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Destek ve Sık Sorulan Sorular — Inner Hunt",
+    "description": "Inner Hunt hakkında sık sorulan sorular: hatırlatıcı, dil ayarı, Günün Esması, zikir sayısı, mealler ve verilerin. Yanıtını bulamadığın sorular için bize yaz."
+  },
+  "label": "Destek",
+  "title": "Destek",
+  "intro": "Inner Hunt hakkında en çok sorulan soruların yanıtları aşağıda. Aradığını bulamazsan bize yazabilirsin.",
+  "faqTitle": "Sık sorulan sorular",
+  "faq": {
+    "reminderMissing": {
+      "question": "Hatırlatıcı bildirimi gelmiyor, ne yapmalıyım?",
+      "answer": "Önce Ayarlar → Hatırlatıcı bölümünde \"Günlük hatırlatıcı\" anahtarının açık olduğunu kontrol et. Bildirim izni kapalıysa uygulama anahtarı kapalı gösterir; cihazının ayarlarından Inner Hunt için bildirimlere izin ver. Android'de pil tasarrufu ya da pil optimizasyonu bildirimleri geciktirebilir veya engelleyebilir; Inner Hunt için pil kısıtlamasını kaldır. Android'de tam zamanlı alarm izni istenmediği için bildirim birkaç dakika geç gelebilir. iOS'ta Odak modları bildirimleri sessize alabilir. Hatırlatıcılar 14 gün ileriye planlanır ve uygulamayı her açtığında yenilenir; uygulamayı uzun süre açmazsan hatırlatıcılar durabilir."
+    },
+    "changeTime": {
+      "question": "Hatırlatıcının saatini nasıl değiştiririm?",
+      "answer": "Ayarlar → Hatırlatıcı bölümünde \"Günlük hatırlatıcı\"yı aç; altında görünen \"Saat\" satırına dokunup yeni saati seç. Varsayılan saat 21:00'dir. Yeni saat hemen uygulanır."
+    },
+    "changeLanguage": {
+      "question": "Uygulamanın dilini nasıl değiştiririm?",
+      "answer": "Ayarlar → Dil bölümünden Türkçe ya da English'i seç. İlk açılışta uygulama cihazının diline göre başlar: cihaz dili Türkçeyse Türkçe, değilse İngilizce. Hatırlatıcı bildirimleri de seçtiğin dilde gelir."
+    },
+    "dailyEsma": {
+      "question": "Günün Esması nasıl seçiliyor?",
+      "answer": "Günün Esması, cihazının tarihine göre sabit bir sırayla belirlenir ve her gün değişir. Bu sıra 99 günde her ismin tam bir kez gelmesini sağlar; 99 gün dolunca döngü yeniden başlar. Hatırlatıcı bildirimi de o günün esmasını gösterir."
+    },
+    "dhikrCount": {
+      "question": "Zikir sayısı nedir?",
+      "answer": "Esma detayında gösterilen zikir sayısı, ismin ebced değeridir: Arapça yazımındaki harflerin sayı değerlerinin toplamı. Baştaki \"el\" harfleri (elif ve lâm) hesaba katılmaz. Örneğin Er-Rahmân için bu sayı 298'dir."
+    },
+    "translations": {
+      "question": "Hangi mealler kullanılıyor?",
+      "answer": "Türkçe ayet mealleri Diyanet İşleri Başkanlığı'na, İngilizce mealler Sahih International'a aittir. İsimlerin sıralaması Tirmizî rivayetine dayanır. Bu kaynakları uygulamada Ayarlar → Kaynaklar bölümünde de görebilirsin."
+    },
+    "whereData": {
+      "question": "Verilerim nerede saklanıyor?",
+      "answer": "Yalnızca cihazında. Hesap yoktur, uygulama ağ isteği yapmaz ve internetsiz çalışır. Cihazda sadece dil tercihin, hatırlatıcı ayarın ve \"Başka göster\" için son gösterilen birkaç esmanın numarası tutulur; uygulamayı sildiğinde bunlar da silinir. Ayrıntılar için <privacy>gizlilik politikasına</privacy> bakabilirsin."
+    },
+    "price": {
+      "question": "Uygulama ücretli mi?",
+      "answer": "Hayır. Inner Hunt tamamen ücretsizdir; uygulama içi satın alma, abonelik ya da reklam yoktur."
+    }
+  },
+  "contact": {
+    "title": "Bize yaz",
+    "body": "Burada yanıtını bulamadığın bir soru, karşılaştığın bir hata ya da içerikle ilgili bir düzeltme önerin varsa e-posta gönder. Hata bildirirken cihaz modelini ve Ayarlar ekranının altında yazan sürüm numarasını eklemen işimizi kolaylaştırır.",
+    "emailLabel": "E-posta"
+  }
+}

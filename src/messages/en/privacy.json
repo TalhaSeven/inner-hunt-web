@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "Privacy Policy — Inner Hunt",
+    "description": "Inner Hunt collects no personal data: no account, the app makes no network requests and works offline. The website keeps only cookieless, anonymous, aggregate statistics."
+  },
+  "label": "Privacy",
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated",
+  "updatedAt": "2026-09-25",
+  "tocLabel": "On this page",
+  "summary": {
+    "title": "Summary",
+    "body": "The Inner Hunt mobile app collects no personal data. There is no account, the app makes no network requests and it works offline. This website keeps only anonymous, aggregate visit statistics without cookies."
+  },
+  "app": {
+    "title": "Mobile app",
+    "items": [
+      "No personal data is collected. There is no account, sign-up or sign-in.",
+      "The app makes no network requests. All content is built into the app, and it works without an internet connection.",
+      "Only your language preference and your reminder setting (on or off, time) are stored on your device. The numbers of the last few names shown are also kept so that \"Show another\" does not repeat the same names in a row. This information never leaves your device.",
+      "Daily reminder notifications are scheduled on your device; no server is involved.",
+      "You can revoke notification permission at any time in your device's system settings.",
+      "Deleting the app deletes all of its data on your device.",
+      "The \"Share\" button hands the text to your device's share menu; you choose what to share and with whom.",
+      "The privacy and support links in Settings open this website in an in-app browser; in that case the \"Website\" section below applies."
+    ]
+  },
+  "website": {
+    "title": "Website",
+    "items": [
+      "Vercel Analytics is used for visit statistics and Vercel Speed Insights for measuring page speed. These tools use no cookies and do not track you across sites; information such as the page viewed, country, browser and device type, and page load time is processed anonymously and in aggregate.",
+      "No tracking, advertising or analytics cookies are used. If you browse in a language different from your browser's language, a functional language cookie (NEXT_LOCALE) is stored solely to remember that choice.",
+      "Fonts are served from the site's own server; no requests are made to third-party servers such as Google Fonts.",
+      "The site is hosted on Vercel. Standard connection information such as your IP address is processed by the hosting infrastructure in order to deliver pages to you.",
+      "The site has no forms, memberships or email newsletters."
+    ]
+  },
+  "thirdParties": {
+    "title": "Third parties",
+    "body": "When you download the app from the App Store or Google Play, those stores process data related to the download under their own privacy policies. That data does not belong to Inner Hunt and is the responsibility of Apple and Google.",
+    "apple": "Apple Privacy Policy",
+    "google": "Google Privacy Policy"
+  },
+  "children": {
+    "title": "Children",
+    "body": "Inner Hunt collects no personal data from anyone; therefore it does not knowingly collect any data from children under 13."
+  },
+  "changes": {
+    "title": "Changes",
+    "body": "If this policy changes, the updated text will be published on this page and the \"Last updated\" date at the top will change."
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "For any question about privacy, write to us:"
+  }
+}

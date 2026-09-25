@@ -1,57 +1,24 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
+import { esmaCore } from '@/content/esma';
+import { locales } from '@/i18n/routing';
+import { ESMA_PAGES_ENABLED, absoluteUrl, alternates } from '@/lib/site';
 
-const locales = ['tr', 'en', 'de', 'es'] as const;
-const defaultLocale = 'tr';
-const baseUrl = 'https://innerhunt.com';
+// Build zamanında bir kez hesaplanır; statik sitemap'teki bütün adresler aynı tarihi taşır.
+const lastModified = new Date();
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const hreflang = {
-        tr: baseUrl,
-        en: `${baseUrl}/en`,
-        de: `${baseUrl}/de`,
-        es: `${baseUrl}/es`,
-        'x-default': baseUrl,
-    };
-
-    const privacyHreflang = {
-        tr: `${baseUrl}/privacy`,
-        en: `${baseUrl}/en/privacy`,
-        de: `${baseUrl}/de/privacy`,
-        es: `${baseUrl}/es/privacy`,
-        'x-default': `${baseUrl}/privacy`,
-    };
-
-    return [
-        // Main page
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 1,
-            alternates: { languages: hreflang },
-        },
-        ...locales.filter(l => l !== defaultLocale).map((locale) => ({
-            url: `${baseUrl}/${locale}`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.9,
-            alternates: { languages: hreflang },
-        })),
-        // Privacy page
-        {
-            url: `${baseUrl}/privacy`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.3,
-            alternates: { languages: privacyHreflang },
-        },
-        ...locales.filter(l => l !== defaultLocale).map((locale) => ({
-            url: `${baseUrl}/${locale}/privacy`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.3,
-            alternates: { languages: privacyHreflang },
-        })),
+    const paths = [
+        '/',
+        '/privacy',
+        '/support',
+        ...(ESMA_PAGES_ENABLED ? ['/esma', ...esmaCore.map((esma) => `/esma/${esma.number}`)] : []),
     ];
-}
 
+    return paths.flatMap((path) =>
+        locales.map((locale) => ({
+            url: absoluteUrl(locale, path),
+            lastModified,
+            alternates: { languages: alternates(path) },
+        })),
+    );
+}

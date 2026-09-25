@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Support and FAQ — Inner Hunt",
+    "description": "Frequently asked questions about Inner Hunt: reminders, language, the Name of the Day, dhikr count, translations and your data. Write to us if you can't find an answer."
+  },
+  "label": "Support",
+  "title": "Support",
+  "intro": "Answers to the most common questions about Inner Hunt are below. If you can't find what you're looking for, write to us.",
+  "faqTitle": "Frequently asked questions",
+  "faq": {
+    "reminderMissing": {
+      "question": "My reminder notification doesn't arrive. What should I do?",
+      "answer": "First, check that \"Daily reminder\" is switched on under Settings → Reminder. If notification permission is off, the app shows the switch as off; allow notifications for Inner Hunt in your device settings. On Android, battery saver or battery optimization can delay or block notifications; remove battery restrictions for Inner Hunt. Because the app does not request exact alarm permission on Android, a notification may arrive a few minutes late. On iOS, Focus modes can silence notifications. Reminders are scheduled 14 days ahead and refreshed every time you open the app; if you don't open it for a long time, reminders may stop."
+    },
+    "changeTime": {
+      "question": "How do I change the reminder time?",
+      "answer": "Under Settings → Reminder, turn on \"Daily reminder\", then tap the \"Time\" row that appears below it and pick a new time. The default time is 21:00. The new time takes effect immediately."
+    },
+    "changeLanguage": {
+      "question": "How do I change the app's language?",
+      "answer": "Choose Türkçe or English under Settings → Language. On first launch the app follows your device language: Turkish if your device is set to Turkish, English otherwise. Reminder notifications also arrive in the language you choose."
+    },
+    "dailyEsma": {
+      "question": "How is the Name of the Day chosen?",
+      "answer": "The Name of the Day is determined by your device's date following a fixed order, and it changes every day. This order makes sure each name appears exactly once in 99 days; after 99 days the cycle starts again. The reminder notification also shows that day's Name."
+    },
+    "dhikrCount": {
+      "question": "What is the dhikr count?",
+      "answer": "The dhikr count shown on a Name's detail page is its abjad value: the sum of the numerical values of the letters in its Arabic spelling. The leading \"al\" (alif and lam) is not counted. For example, for Ar-Rahman this number is 298."
+    },
+    "translations": {
+      "question": "Which translations are used?",
+      "answer": "Turkish verse translations are by the Presidency of Religious Affairs (Diyanet) and English translations are by Sahih International. The order of the Names follows the narration of Tirmidhi. You can also see these sources in the app under Settings → Sources."
+    },
+    "whereData": {
+      "question": "Where is my data stored?",
+      "answer": "Only on your device. There is no account, the app makes no network requests and it works offline. The device keeps only your language preference, your reminder setting and the numbers of the last few Names shown for \"Show another\"; deleting the app deletes them too. See the <privacy>privacy policy</privacy> for details."
+    },
+    "price": {
+      "question": "Is the app paid?",
+      "answer": "No. Inner Hunt is completely free; there are no in-app purchases, subscriptions or ads."
+    }
+  },
+  "contact": {
+    "title": "Write to us",
+    "body": "If you have a question not answered here, have run into a bug or want to suggest a correction to the content, send an email. When reporting a bug, including your device model and the version number shown at the bottom of the Settings screen helps us a lot.",
+    "emailLabel": "Email"
+  }
+}

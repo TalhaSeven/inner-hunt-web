@@ -1,0 +1,162 @@
+.phone {
+  position: relative;
+  padding: 3.2%;
+  border-radius: 14% / 7.6%;
+  background: linear-gradient(160deg, #1b1a1f 0%, #0b0b0e 55%, #121116 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.7),
+    0 40px 90px -40px rgba(212, 175, 55, 0.3),
+    0 24px 60px -24px rgba(0, 0, 0, 0.95);
+}
+
+.screen {
+  overflow: hidden;
+  border-radius: 11.5% / 6.5%;
+  background: #030305;
+}
+
+.screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.corners {
+  --corner: rgba(212, 175, 55, 0.55);
+  --corner-size: 14px;
+  background:
+    linear-gradient(var(--corner), var(--corner)) top left / var(--corner-size) 1px no-repeat,
+    linear-gradient(var(--corner), var(--corner)) top left / 1px var(--corner-size) no-repeat,
+    linear-gradient(var(--corner), var(--corner)) top right / var(--corner-size) 1px no-repeat,
+    linear-gradient(var(--corner), var(--corner)) top right / 1px var(--corner-size) no-repeat,
+    linear-gradient(var(--corner), var(--corner)) bottom left / var(--corner-size) 1px no-repeat,
+    linear-gradient(var(--corner), var(--corner)) bottom left / 1px var(--corner-size) no-repeat,
+    linear-gradient(var(--corner), var(--corner)) bottom right / var(--corner-size) 1px no-repeat,
+    linear-gradient(var(--corner), var(--corner)) bottom right / 1px var(--corner-size) no-repeat,
+    rgba(255, 255, 255, 0.015);
+}
+
+.glow {
+  background: radial-gradient(closest-side, rgba(212, 175, 55, 0.16), rgba(212, 175, 55, 0.05) 55%, transparent);
+}
+
+.dots {
+  display: grid;
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+  gap: clamp(6px, 2.2vw, 12px);
+}
+
+.dot {
+  --step: 0.35s;
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 9999px;
+  background: rgba(212, 175, 55, 0.16);
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: #d4af37;
+  box-shadow: 0 0 10px 2px rgba(212, 175, 55, 0.5);
+  opacity: 0;
+}
+
+.dotFirst::after {
+  opacity: 1;
+}
+
+.mood {
+  border-left: 2px solid var(--accent);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, transparent), transparent 65%);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.mood:hover {
+  border-top-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  border-right-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  border-bottom-color: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.faqIcon {
+  transition: transform 0.3s ease;
+}
+
+details[open] .faqIcon {
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .float {
+    animation: float 9s ease-in-out infinite alternate;
+  }
+
+  .breathe {
+    animation: breathe 10s ease-in-out infinite alternate;
+  }
+
+  .dot::after {
+    animation: dotPass calc(99 * var(--step)) linear infinite;
+    animation-delay: calc(var(--order) * var(--step));
+  }
+
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes breathe {
+  from {
+    opacity: 0.65;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes dotPass {
+  0% {
+    opacity: 0;
+  }
+  0.5% {
+    opacity: 1;
+  }
+  2.5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

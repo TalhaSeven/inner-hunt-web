@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Inner Hunt — Daily Reflection on the 99 Names",
+    "description": "Reflect daily on the 99 Names of Allah with Inner Hunt: a name for each day, names for your state of heart, Qur'anic verses and a daily reminder. Free, no ads."
+  },
+  "nav": {
+    "main": "Main menu",
+    "home": "Inner Hunt home",
+    "download": "Download",
+    "skipToContent": "Skip to content"
+  },
+  "langSwitcher": {
+    "label": "Language",
+    "tr": "Türkçe",
+    "en": "English"
+  },
+  "footer": {
+    "tagline": "Daily reflection on the 99 Names.",
+    "linksLabel": "Site links",
+    "privacy": "Privacy",
+    "support": "Support",
+    "esma": "The 99 Names",
+    "contact": "Contact",
+    "trademarkApple": "Apple, the Apple logo and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.",
+    "trademarkGoogle": "Google Play and the Google Play logo are trademarks of Google LLC."
+  },
+  "badges": {
+    "groupLabel": "Download the app",
+    "appStore": "Download on the App Store",
+    "googlePlay": "Get it on Google Play",
+    "comingSoon": "Coming soon",
+    "comingSoonLabel": "{store} — coming soon"
+  }
+}

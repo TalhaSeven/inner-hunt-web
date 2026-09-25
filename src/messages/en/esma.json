@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "listTitle": "Asma ul-Husna: The 99 Names of Allah and Their Meanings | Inner Hunt",
+    "listDescription": "The 99 Names of Allah in the order narrated by Tirmidhi: Arabic script, meanings, explanations, verses from the Qur'an and reflections.",
+    "detailTitle": "{name} ({arabic}) — Meaning | {site}"
+  },
+  "list": {
+    "eyebrow": "Asma ul-Husna",
+    "title": "The 99 Names of Allah",
+    "intro": "Each Name has its own page with its meaning, an explanation, verses from the Qur'an, a reflection and today's practice.",
+    "order": "The order follows the narration of Tirmidhi.",
+    "listLabel": "99 Names"
+  },
+  "detail": {
+    "label": "Name {number}",
+    "backToList": "All Names",
+    "breadcrumbLabel": "Breadcrumb",
+    "descriptionTitle": "About",
+    "versesTitle": "From the Qur'an",
+    "translationSource": "Sahih International",
+    "reflectionTitle": "Reflection",
+    "practiceTitle": "Today's practice",
+    "dhikrLabel": "Dhikr",
+    "dhikrUnit": "times",
+    "dhikrNote": "The abjad value of the Name",
+    "moodsTitle": "For these feelings",
+    "pagerLabel": "Previous and next Name",
+    "previous": "Previous Name",
+    "next": "Next Name"
+  },
+  "app": {
+    "title": "One Name every day, with a reminder",
+    "body": "Inner Hunt brings you one Name each day; over 99 days every Name comes once. A daily reminder calls you back to the Name of the day at the time you choose. Pick how you feel, and it shows a Name suited to that feeling.",
+    "note": "Free · No ads · Works offline"
+  }
+}

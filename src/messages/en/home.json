@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Inner Hunt — Daily Reflection on the 99 Names",
+    "description": "Reflect on the 99 Names of Allah every day: a Name for each day, Names for how you feel, Qur'anic verses and a daily reminder. Free, no ads, works offline."
+  },
+  "hero": {
+    "eyebrow": "For iOS and Android",
+    "title": "Daily reflection on the 99 Names",
+    "subtitle": "A Name for each day, a Name for how you feel, verses from the Qur'an and a short reflection; all on your phone, quiet and simple.",
+    "note": "Free · No purchases · No ads",
+    "imageAlt": "Inner Hunt Today screen: the Name of the Day card showing Al-Khafid, with the feeling picker below"
+  },
+  "daily": {
+    "eyebrow": "Today",
+    "title": "Name of the Day",
+    "lead": "Every Name once in 99 days.",
+    "body": "Each time you open the Today tab, the Name of the day greets you: its Arabic script, transliteration and meaning. Over 99 days the Names come without a single repeat, so in that time you meet all of the Beautiful Names.",
+    "detail": "Tap the card to open the Name's explanation, verses, reflection and today's practice.",
+    "cycleCaption": "Each dot is one Name. The light follows how the Names fall across the 99 days."
+  },
+  "moods": {
+    "eyebrow": "How are you feeling?",
+    "title": "A Name for how you feel",
+    "body": "On the Today tab, pick one of eight feelings and a Name suited to it appears. If you like, tap \"Show another\" for a different Name for the same feeling.",
+    "listLabel": "The eight feelings in the app"
+  },
+  "names": {
+    "eyebrow": "Library",
+    "title": "The 99 Names",
+    "body": "The Library tab holds all 99 Names in the order narrated by Tirmidhi. Search by name or meaning and reach the Name you are looking for in a single tap.",
+    "libraryImageAlt": "Inner Hunt Library screen: a search box and a numbered list of Names such as Ar-Rahman, Ar-Rahim and Al-Malik",
+    "anatomyTitle": "What is on a Name's page?",
+    "anatomyLead": "Every Name opens with the same layout, made for pausing and reflecting.",
+    "detailImageAlt": "Inner Hunt Name detail screen: Name 35, Ash-Shakur, with its Arabic script, meaning and the About section",
+    "versesImageAlt": "Continuation of the Inner Hunt Name detail screen: verses from the Qur'an and the Reflection section",
+    "anatomy": {
+      "number": {
+        "title": "Number and Arabic script",
+        "text": "Its place in Tirmidhi's order and the Name written in vocalized Arabic."
+      },
+      "meaning": {
+        "title": "Meaning",
+        "text": "A plain, one-sentence rendering of the Name."
+      },
+      "description": {
+        "title": "About",
+        "text": "What the Name conveys, through its root, its usage and its place in the Qur'an."
+      },
+      "verses": {
+        "title": "From the Qur'an",
+        "text": "Verses in which the Name appears or that shed light on its meaning, with surah and verse numbers."
+      },
+      "reflection": {
+        "title": "Reflection",
+        "text": "A short text to help you carry the Name into your own life."
+      },
+      "practice": {
+        "title": "Today's practice",
+        "text": "A small, concrete step you can take during the day."
+      },
+      "dhikr": {
+        "title": "Dhikr count",
+        "text": "A dhikr count calculated from the Name's abjad value."
+      },
+      "share": {
+        "title": "Share",
+        "text": "Share the Name, its meaning and its reflection through any app you like."
+      }
+    },
+    "browseAll": "Explore all the Names"
+  },
+  "reminder": {
+    "eyebrow": "Settings",
+    "title": "Daily reminder",
+    "body": "Turn on the reminder and choose a time; at that time a notification brings you the Name of the Day with its meaning. The default time is 21:00.",
+    "local": "Notifications are scheduled on your device and never connect to a server.",
+    "notificationLabel": "Sample notification",
+    "notificationTime": "21:00",
+    "notificationTitle": "Today's Name: {name}"
+  },
+  "privacy": {
+    "label": "Privacy",
+    "noAccount": "No account",
+    "noData": "No data collected",
+    "offline": "Works offline",
+    "body": "The app never makes a network request. Only your language and reminder settings, plus the numbers of the last few names shown for \"Show another\", are stored on your device.",
+    "link": "Privacy policy"
+  },
+  "sources": {
+    "eyebrow": "Sources",
+    "title": "Grounded in trusted sources",
+    "body": "Verse translations and the order of the Names rely on well-known, established sources. They are also listed in the app's Settings tab.",
+    "items": {
+      "trTranslation": {
+        "label": "Turkish translation",
+        "value": "Presidency of Religious Affairs (Diyanet)"
+      },
+      "enTranslation": {
+        "label": "English translation",
+        "value": "Sahih International"
+      },
+      "order": {
+        "label": "Order of the Names",
+        "value": "Tirmidhi"
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Short questions, short answers",
+    "items": {
+      "price": {
+        "question": "Is Inner Hunt free?",
+        "answer": "Yes. Inner Hunt is completely free; there are no in-app purchases and no ads."
+      },
+      "offline": {
+        "question": "Do I need an internet connection?",
+        "answer": "No. All content for the 99 Names is inside the app; it never makes a network request and works offline."
+      },
+      "reminder": {
+        "question": "How do I set up the reminder?",
+        "answer": "In the Settings tab, turn on the daily reminder and choose a time; the default is 21:00. Notifications must be allowed on your device."
+      },
+      "languages": {
+        "question": "Which languages are available?",
+        "answer": "Turkish and English. You can switch the language any time from the Settings tab."
+      }
+    },
+    "more": "See the Support page for all questions and contact"
+  },
+  "download": {
+    "eyebrow": "Download",
+    "title": "Begin your reflection today",
+    "body": "Inner Hunt is free on iOS and Android. Meet your first Name without creating an account or going online."
+  }
+}

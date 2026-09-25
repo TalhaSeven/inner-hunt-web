@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "listTitle": "Esmâü'l-Hüsnâ: Allah'ın 99 İsmi ve Anlamları | Inner Hunt",
+    "listDescription": "Esmâü'l-Hüsnâ'nın 99 ismi Tirmizî sıralamasıyla: Arapça yazımları, anlamları, açıklamaları, Kur'an'dan ayetler ve tefekkür.",
+    "detailTitle": "{name} ({arabic}) — Anlamı | {site}"
+  },
+  "list": {
+    "eyebrow": "Esmâü'l-Hüsnâ",
+    "title": "Allah'ın 99 İsmi",
+    "intro": "Her ismin sayfasında anlamı, açıklaması, Kur'an'dan ayetler, bir tefekkür metni ve bugünün pratiği yer alır.",
+    "order": "Sıralama Tirmizî rivayetine göredir.",
+    "listLabel": "99 isim"
+  },
+  "detail": {
+    "label": "{number}. Esma",
+    "backToList": "Tüm isimler",
+    "breadcrumbLabel": "Sayfa konumu",
+    "descriptionTitle": "Açıklama",
+    "versesTitle": "Kur'an'dan",
+    "translationSource": "Diyanet İşleri Başkanlığı meali",
+    "reflectionTitle": "Tefekkür",
+    "practiceTitle": "Bugünün pratiği",
+    "dhikrLabel": "Zikir",
+    "dhikrUnit": "defa",
+    "dhikrNote": "İsmin ebced değeri",
+    "moodsTitle": "Bu hâllerde",
+    "pagerLabel": "Önceki ve sonraki isim",
+    "previous": "Önceki isim",
+    "next": "Sonraki isim"
+  },
+  "app": {
+    "title": "Her gün bir esma, hatırlatıcıyla",
+    "body": "Inner Hunt her gün bir ismi karşına getirir; 99 günde her isim bir kez gelir. Günlük hatırlatıcı seçtiğin saatte seni o günün esmasına çağırır. Nasıl hissettiğini seçersen o hâle uygun bir isim gösterir.",
+    "note": "Ücretsiz · Reklam yok · İnternetsiz çalışır"
+  }
+}

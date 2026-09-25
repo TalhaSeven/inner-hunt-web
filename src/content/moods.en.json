@@ -1,0 +1,34 @@
+{
+  "A": {
+    "name": "Balanced · Vibrant",
+    "tags": "Vibrant · Positive · Productive"
+  },
+  "B": {
+    "name": "Calm · Focused",
+    "tags": "Reliable · Focused · Peaceful"
+  },
+  "C": {
+    "name": "Deep · Elegant",
+    "tags": "Elegant · Powerful · Mysterious"
+  },
+  "D": {
+    "name": "Emotional · Loving",
+    "tags": "Compassionate · Loving · Gentle"
+  },
+  "E": {
+    "name": "Sad · Fragile",
+    "tags": "Sad · Fragile · Sensitive"
+  },
+  "F": {
+    "name": "Anxious · Worried",
+    "tags": "Anxious · Thoughtful · Deliberate"
+  },
+  "G": {
+    "name": "Tired · Drained",
+    "tags": "Tired · Overwhelmed · Quiet"
+  },
+  "H": {
+    "name": "Hopeful · Surrendered",
+    "tags": "Hopeful · Waiting · Serene"
+  }
+}

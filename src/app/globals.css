@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
+/* Renkler mobil uygulamanın src/theme/tokens.ts dosyasıyla aynıdır. */
 @theme inline {
   --color-bg: #030305;
   --color-bg-card: rgba(255, 255, 255, 0.015);
+  --color-border: rgba(255, 255, 255, 0.08);
   --color-gold: #d4af37;
   --color-gold-light: #f3e5ab;
   --color-gold-dark: #aa8529;
@@ -10,35 +12,29 @@
   --color-text-dim: #a8a095;
   --color-text-muted: #756f65;
 
-  --font-amiri: "Amiri", serif;
-  --font-cinzel: "Cinzel", serif;
-  --font-outfit: "Outfit", sans-serif;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  -webkit-tap-highlight-color: transparent;
+  --font-cinzel: var(--ff-cinzel), "Cinzel", serif;
+  --font-outfit: var(--ff-outfit), "Outfit", system-ui, sans-serif;
+  --font-amiri: var(--ff-amiri), "Amiri", serif;
 }
 
 html {
-  overflow-x: hidden;
-  height: 100%;
   -webkit-text-size-adjust: 100%;
+  background-color: var(--color-bg);
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
+  min-height: 100dvh;
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-outfit);
-  min-height: 100vh;
-  overflow-x: hidden;
-  overscroll-behavior: none;
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -53,198 +49,11 @@ body {
   outline: none;
 }
 
-/* Enhanced Grain overlay for tactility */
-body::after {
-  content: "";
-  position: fixed;
-  inset: -100px; /* Oversized to prevent edges showing on scroll bounce */
-  z-index: 9999;
-  pointer-events: none;
-  opacity: 0.15;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' /%3E%3C/svg%3E");
-  background-repeat: repeat;
-  mix-blend-mode: overlay;
-}
-
-/* Advanced Vignette for depth */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 9998;
-  pointer-events: none;
-  background: radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.4) 100%);
-}
-
-/* Hide scrollbar */
-::-webkit-scrollbar {
-  display: none;
-}
-
-* {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* Luminous gold gradient text */
-.text-gradient-gold {
-  background: linear-gradient(
-    135deg,
-    var(--color-gold-light) 0%,
-    var(--color-gold) 50%,
-    var(--color-gold-dark) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  display: inline-block;
-  text-shadow: 0 4px 32px rgba(212, 175, 55, 0.15);
-}
-
-/* Deep ethereal metallic text */
-.text-metallic {
-  background: linear-gradient(
-    to bottom right,
-    #ffffff 0%,
-    #e0e0e0 40%,
-    #a0a0a0 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  display: inline-block;
-}
-
-/* Restyled Gold button - sharp and high contrast */
-.btn-gold {
-  position: relative;
-  padding: 18px 48px;
-  background: transparent;
-  color: var(--color-gold-light);
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  background-color: rgba(212, 175, 55, 0.05);
-  border-radius: 0; /* Sharp edges */
-  font-family: var(--font-cinzel);
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-  backdrop-filter: blur(10px);
-}
-
-.btn-gold::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
-  transition: left 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.btn-gold:hover {
-  border-color: var(--color-gold);
-  color: #fff;
-  background-color: rgba(212, 175, 55, 0.15);
-  box-shadow: 0 0 32px -5px rgba(212, 175, 55, 0.4), inset 0 0 16px rgba(212, 175, 55, 0.1);
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-  transform: scale(1.02);
-}
-
-.btn-gold:hover::before {
-  left: 100%;
-}
-
-.btn-gold:active {
-  transform: scale(0.98);
-}
-
-.btn-gold:disabled {
-  opacity: 0.3;
-  color: #7a6a45;
-  border-color: rgba(122, 106, 69, 0.3);
-  background: transparent;
-  cursor: not-allowed;
-  pointer-events: none;
-  transform: none;
-  box-shadow: none;
-}
-
-input,
-select,
-textarea {
-  font-size: 16px;
-}
-
-/* Screen label */
-.screen-label {
-  font-family: var(--font-cinzel);
-  font-size: 12px;
-  letter-spacing: 6px;
-  color: var(--color-gold);
-  text-transform: uppercase;
-  opacity: 0.8;
-  text-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
-}
-
-/* Screen title */
-.screen-title {
-  font-family: var(--font-cinzel);
-  font-size: clamp(28px, 6vw, 48px);
-  font-weight: 600;
-  text-align: center;
-  line-height: 1.1;
+::selection {
+  background-color: rgba(212, 175, 55, 0.3);
   color: var(--color-text);
-  letter-spacing: -0.5px;
 }
 
-/* Safe area padding for notched phones */
-@supports (padding-top: env(safe-area-inset-top)) {
-  .safe-area-top {
-    padding-top: env(safe-area-inset-top);
-  }
-  .safe-area-bottom {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-}
-
-/* Intense pulse glow keyframe for esma circle */
-@keyframes pulse-glow {
-  0%,
-  100% {
-    box-shadow: 0 0 60px -15px var(--esma-color, #d4af37), inset 0 0 20px var(--esma-color, #d4af37);
-  }
-  50% {
-    box-shadow: 0 0 120px 0px var(--esma-color, #d4af37), inset 0 0 40px var(--esma-color, #d4af37);
-  }
-}
-
-/* Subtle ambient rotation */
-@keyframes ambient-rotate {
-  from {
-    transform: rotate(0deg) scale(1.1);
-  }
-  to {
-    transform: rotate(360deg) scale(1.1);
-  }
-}
-
-@media (max-width: 768px) {
-  body::after {
-    display: none;
-  }
-  body::before {
-    display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .mood-grid-responsive {
-    grid-template-columns: 1fr !important;
-  }
+[id] {
+  scroll-margin-top: 5rem;
 }

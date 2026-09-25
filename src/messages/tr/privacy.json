@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "Gizlilik Politikası — Inner Hunt",
+    "description": "Inner Hunt kişisel veri toplamaz: hesap yok, uygulama ağ isteği yapmaz ve internetsiz çalışır. Web sitesi yalnızca çerezsiz, anonim ve toplu istatistik tutar."
+  },
+  "label": "Gizlilik",
+  "title": "Gizlilik Politikası",
+  "lastUpdated": "Son güncelleme",
+  "updatedAt": "2026-09-25",
+  "tocLabel": "Bu sayfada",
+  "summary": {
+    "title": "Özet",
+    "body": "Inner Hunt mobil uygulaması hiçbir kişisel veri toplamaz. Hesap yoktur, uygulama ağ isteği yapmaz ve internetsiz çalışır. Bu web sitesi ise yalnızca çerez kullanmayan, anonim ve toplu ziyaret istatistikleri tutar."
+  },
+  "app": {
+    "title": "Mobil uygulama",
+    "items": [
+      "Kişisel veri toplanmaz. Hesap, kayıt ya da giriş yoktur.",
+      "Uygulama hiçbir ağ isteği yapmaz. Bütün içerik uygulamanın içindedir; internet bağlantısı olmadan çalışır.",
+      "Cihazında yalnızca dil tercihin ve hatırlatıcı ayarın (açık ya da kapalı, saat) saklanır. Ayrıca \"Başka göster\" aynı isimleri art arda getirmesin diye son gösterilen birkaç esmanın numarası tutulur. Bu bilgiler cihazından dışarı çıkmaz.",
+      "Günlük hatırlatıcı bildirimleri cihazında planlanır; bunun için bir sunucu kullanılmaz.",
+      "Bildirim iznini istediğin zaman cihazının sistem ayarlarından geri alabilirsin.",
+      "Uygulamayı sildiğinde cihazdaki bütün verileri de silinir.",
+      "\"Paylaş\" düğmesi, paylaşılacak metni cihazının paylaşım menüsüne verir; neyi, kiminle paylaşacağını sen seçersin.",
+      "Ayarlar'daki gizlilik ve destek bağlantıları bu web sitesini uygulama içi tarayıcıda açar; bu durumda aşağıdaki \"Web sitesi\" bölümü geçerlidir."
+    ]
+  },
+  "website": {
+    "title": "Web sitesi",
+    "items": [
+      "Ziyaret istatistikleri için Vercel Analytics, sayfa hızını ölçmek için Vercel Speed Insights kullanılır. Bu araçlar çerez kullanmaz ve seni siteler arasında takip etmez; görüntülenen sayfa, ülke, tarayıcı ve cihaz türü, sayfa yüklenme süresi gibi bilgiler anonim ve toplu olarak işlenir.",
+      "Takip, reklam ya da analiz çerezi kullanılmaz. Tarayıcının dilinden farklı bir dilde gezinirsen, yalnızca bu dil tercihini hatırlamak için işlevsel bir dil çerezi (NEXT_LOCALE) kaydedilir.",
+      "Yazı tipleri sitenin kendi sunucusundan yüklenir; Google Fonts gibi üçüncü taraf sunuculara istek gönderilmez.",
+      "Site Vercel üzerinde barındırılır. Sayfaların sana ulaştırılabilmesi için IP adresi gibi standart bağlantı bilgileri barındırma altyapısı tarafından işlenir.",
+      "Sitede form, üyelik ya da e-posta bülteni yoktur."
+    ]
+  },
+  "thirdParties": {
+    "title": "Üçüncü taraflar",
+    "body": "Uygulamayı App Store ya da Google Play'den indirdiğinde, bu mağazalar indirme işlemiyle ilgili verileri kendi gizlilik politikalarına göre işler. Bu veriler Inner Hunt'a ait değildir ve Apple ile Google'ın sorumluluğundadır.",
+    "apple": "Apple Gizlilik Politikası",
+    "google": "Google Gizlilik Politikası"
+  },
+  "children": {
+    "title": "Çocuklar",
+    "body": "Inner Hunt kimseden kişisel veri toplamaz; bu nedenle 13 yaşından küçük çocuklardan da bilerek herhangi bir veri toplamaz."
+  },
+  "changes": {
+    "title": "Değişiklikler",
+    "body": "Bu politika değişirse güncel metin bu sayfada yayımlanır ve sayfanın başındaki \"Son güncelleme\" tarihi değişir."
+  },
+  "contact": {
+    "title": "İletişim",
+    "body": "Gizlilikle ilgili her soru için bize yazabilirsin:"
+  }
+}

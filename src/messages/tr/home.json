@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Inner Hunt — Esmâü'l-Hüsnâ ile Günlük Tefekkür",
+    "description": "Esmâü'l-Hüsnâ ile her gün tefekkür: günün esması, hâline uygun isimler, ayetler ve günlük hatırlatıcı. Ücretsiz, reklamsız; hesap istemez, internetsiz çalışır."
+  },
+  "hero": {
+    "eyebrow": "iOS ve Android için",
+    "title": "Esmâü'l-Hüsnâ ile günlük tefekkür",
+    "subtitle": "Her gün bir isim, hâline uygun bir esma, Kur'an'dan ayetler ve kısa bir tefekkür; hepsi telefonunda, sessiz ve sade.",
+    "note": "Ücretsiz · Satın alma yok · Reklam yok",
+    "imageAlt": "Inner Hunt Bugün ekranı: Günün Esması kartında El-Hâfıd ismi ve altında hâl seçimi"
+  },
+  "daily": {
+    "eyebrow": "Bugün",
+    "title": "Günün Esması",
+    "lead": "99 günde her isim bir kez.",
+    "body": "Bugün sekmesini her açtığında seni o günün ismi karşılar: Arapça yazımı, okunuşu ve anlamıyla. İsimler 99 gün boyunca hiç tekrar etmeden gelir; bu sürede Esmâü'l-Hüsnâ'nın tamamıyla tanışırsın.",
+    "detail": "Karta dokunduğunda ismin açıklaması, ayetleri, tefekkürü ve bugünün pratiği açılır.",
+    "cycleCaption": "Her nokta bir isim. Işık, isimlerin 99 güne dağılışını izler."
+  },
+  "moods": {
+    "eyebrow": "Nasıl hissediyorsun?",
+    "title": "Hâline göre esma",
+    "body": "Bugün sekmesinde sekiz hâlden birini seç; o hâle uygun bir esma gösterilir. İstersen \"Başka göster\" ile aynı hâl için başka bir isme geçersin.",
+    "listLabel": "Uygulamadaki sekiz hâl"
+  },
+  "names": {
+    "eyebrow": "Kütüphane",
+    "title": "99 İsim",
+    "body": "Kütüphane sekmesinde 99 ismin tamamı Tirmizî sıralamasıyla durur. İsim ya da anlam yazarak ara; aradığın isme bir dokunuşla ulaş.",
+    "libraryImageAlt": "Inner Hunt Kütüphane ekranı: arama kutusu ve numaralarıyla Er-Rahmân, Er-Rahîm, El-Melik gibi isimlerin listesi",
+    "anatomyTitle": "Bir ismin sayfasında neler var?",
+    "anatomyLead": "Her isim, üzerinde durup düşünebileceğin aynı düzenle açılır.",
+    "detailImageAlt": "Inner Hunt esma detay ekranı: 35. esma Eş-Şekûr, Arapça yazımı, anlamı ve açıklama bölümü",
+    "versesImageAlt": "Inner Hunt esma detay ekranının devamı: Kur'an'dan ayetler ve tefekkür bölümü",
+    "anatomy": {
+      "number": {
+        "title": "Numara ve Arapça yazım",
+        "text": "Tirmizî sıralamasındaki yeri ve ismin harekeli Arapça yazımı."
+      },
+      "meaning": {
+        "title": "Anlam",
+        "text": "İsmin tek cümlelik, sade bir karşılığı."
+      },
+      "description": {
+        "title": "Açıklama",
+        "text": "Kökü, kullanımı ve Kur'an'daki yeriyle ismin ne anlattığı."
+      },
+      "verses": {
+        "title": "Kur'an'dan",
+        "text": "İsmin geçtiği ya da anlamına ışık tutan ayet(ler), sure ve ayet numarasıyla."
+      },
+      "reflection": {
+        "title": "Tefekkür",
+        "text": "İsmi kendi hayatına taşıman için kısa bir düşünme metni."
+      },
+      "practice": {
+        "title": "Bugünün pratiği",
+        "text": "Gün içinde uygulayabileceğin küçük, somut bir adım."
+      },
+      "dhikr": {
+        "title": "Zikir sayısı",
+        "text": "İsmin ebced değerine göre hesaplanan zikir sayısı."
+      },
+      "share": {
+        "title": "Paylaş",
+        "text": "İsmi, anlamını ve tefekkürünü dilediğin uygulamayla paylaş."
+      }
+    },
+    "browseAll": "Bütün isimleri incele"
+  },
+  "reminder": {
+    "eyebrow": "Ayarlar",
+    "title": "Günlük hatırlatıcı",
+    "body": "Hatırlatıcıyı açıp bir saat seç; o saatte bildirim günün esmasını adı ve anlamıyla getirir. Varsayılan saat 21:00.",
+    "local": "Bildirimler cihazında planlanır; hiçbir sunucuya bağlanmaz.",
+    "notificationLabel": "Örnek bildirim",
+    "notificationTime": "21:00",
+    "notificationTitle": "Bugünün esması: {name}"
+  },
+  "privacy": {
+    "label": "Gizlilik",
+    "noAccount": "Hesap yok",
+    "noData": "Veri toplanmaz",
+    "offline": "İnternetsiz çalışır",
+    "body": "Uygulama hiç ağ isteği yapmaz. Cihazında yalnızca dil ve hatırlatıcı ayarın, bir de \"Başka göster\" için son gösterilen birkaç esmanın numarası saklanır.",
+    "link": "Gizlilik politikası"
+  },
+  "sources": {
+    "eyebrow": "Kaynaklar",
+    "title": "Güvenilir kaynaklardan",
+    "body": "Ayetlerin meali ve isimlerin sıralaması bilinen, yerleşik kaynaklara dayanır. Kaynaklar uygulamanın Ayarlar sekmesinde de yazılıdır.",
+    "items": {
+      "trTranslation": {
+        "label": "Türkçe meal",
+        "value": "Diyanet İşleri Başkanlığı"
+      },
+      "enTranslation": {
+        "label": "İngilizce meal",
+        "value": "Sahih International"
+      },
+      "order": {
+        "label": "Esma sıralaması",
+        "value": "Tirmizî"
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "Sıkça sorulanlar",
+    "title": "Kısa sorular, kısa cevaplar",
+    "items": {
+      "price": {
+        "question": "Inner Hunt ücretli mi?",
+        "answer": "Hayır. Inner Hunt tamamen ücretsizdir; uygulama içi satın alma ve reklam yoktur."
+      },
+      "offline": {
+        "question": "İnternet bağlantısı gerekiyor mu?",
+        "answer": "Hayır. 99 ismin bütün içeriği uygulamanın içindedir; uygulama hiç ağ isteği yapmaz ve internetsiz çalışır."
+      },
+      "reminder": {
+        "question": "Hatırlatıcıyı nasıl kurarım?",
+        "answer": "Ayarlar sekmesinde günlük hatırlatıcıyı aç ve saati seç; varsayılan saat 21:00'dir. Bildirim için cihazının bildirim izni açık olmalıdır."
+      },
+      "languages": {
+        "question": "Hangi dillerde kullanabilirim?",
+        "answer": "Türkçe ve İngilizce. Dili Ayarlar sekmesinden istediğin zaman değiştirebilirsin."
+      }
+    },
+    "more": "Bütün sorular ve iletişim için Destek sayfası"
+  },
+  "download": {
+    "eyebrow": "İndir",
+    "title": "Tefekküre bugün başla",
+    "body": "Inner Hunt iOS ve Android'de ücretsiz. Hesap açmadan, internete bağlanmadan ilk isminle tanış."
+  }
+}
