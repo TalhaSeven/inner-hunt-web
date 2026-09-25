@@ -39,15 +39,6 @@ export default function proxy(request: NextRequest) {
         return NextResponse.next();
     }
 
-    if (pathname === '/privacy') {
-        const localeCookie = request.cookies.get('NEXT_LOCALE')?.value;
-        if (isLocale(localeCookie) && localeCookie !== defaultLocale) {
-            const url = request.nextUrl.clone();
-            url.pathname = localePath(localeCookie, '/privacy');
-            return NextResponse.redirect(url);
-        }
-    }
-
     return intlMiddleware(request);
 }
 

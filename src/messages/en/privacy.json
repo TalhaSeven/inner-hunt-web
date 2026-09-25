@@ -29,7 +29,7 @@
     "title": "Website",
     "items": [
       "Vercel Analytics is used for visit statistics and Vercel Speed Insights for measuring page speed. These tools use no cookies and do not track you across sites; information such as the page viewed, country, browser and device type, and page load time is processed anonymously and in aggregate.",
-      "No tracking, advertising or analytics cookies are used. If you browse in a language different from your browser's language, a functional language cookie (NEXT_LOCALE) is stored solely to remember that choice.",
+      "The site does not use cookies.",
       "Fonts are served from the site's own server; no requests are made to third-party servers such as Google Fonts.",
       "The site is hosted on Vercel. Standard connection information such as your IP address is processed by the hosting infrastructure in order to deliver pages to you.",
       "The site has no forms, memberships or email newsletters."

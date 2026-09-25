@@ -29,7 +29,7 @@
     "title": "Web sitesi",
     "items": [
       "Ziyaret istatistikleri için Vercel Analytics, sayfa hızını ölçmek için Vercel Speed Insights kullanılır. Bu araçlar çerez kullanmaz ve seni siteler arasında takip etmez; görüntülenen sayfa, ülke, tarayıcı ve cihaz türü, sayfa yüklenme süresi gibi bilgiler anonim ve toplu olarak işlenir.",
-      "Takip, reklam ya da analiz çerezi kullanılmaz. Tarayıcının dilinden farklı bir dilde gezinirsen, yalnızca bu dil tercihini hatırlamak için işlevsel bir dil çerezi (NEXT_LOCALE) kaydedilir.",
+      "Site çerez kullanmaz.",
       "Yazı tipleri sitenin kendi sunucusundan yüklenir; Google Fonts gibi üçüncü taraf sunuculara istek gönderilmez.",
       "Site Vercel üzerinde barındırılır. Sayfaların sana ulaştırılabilmesi için IP adresi gibi standart bağlantı bilgileri barındırma altyapısı tarafından işlenir.",
       "Sitede form, üyelik ya da e-posta bülteni yoktur."

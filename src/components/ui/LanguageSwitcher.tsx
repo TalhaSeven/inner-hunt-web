@@ -21,11 +21,6 @@ function withLocale(locale: Locale, path: string): string {
   return path === "/" ? `/${locale}` : `/${locale}${path}`;
 }
 
-// next-intl, "/" isteğinde bu çereze bakarak yönlendirir; seçilen dil kalıcı olsun.
-function rememberLocale(locale: Locale) {
-  document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; samesite=lax`;
-}
-
 export default function LanguageSwitcher({ locale, label, names }: Props) {
   const path = stripLocale(usePathname() ?? "/");
 
@@ -40,7 +35,6 @@ export default function LanguageSwitcher({ locale, label, names }: Props) {
             hrefLang={code}
             lang={code}
             prefetch={false}
-            onClick={() => rememberLocale(code)}
             aria-current={active ? "true" : undefined}
             aria-label={names[code]}
             className={`inline-flex min-h-11 min-w-11 items-center justify-center px-2 font-cinzel tracking-[0.2em] uppercase transition-colors ${
