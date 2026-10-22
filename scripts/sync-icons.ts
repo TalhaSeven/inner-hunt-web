@@ -11,6 +11,7 @@ if (!existsSync(source)) throw new Error(`İkon bulunamadı: ${source}`);
 const outputs: [string, number][] = [
     ['src/app/icon.png', 512],
     ['src/app/apple-icon.png', 180],
+    ['public/apple-touch-icon.png', 180],
     ['public/icon-192.png', 192],
     ['public/icon-512.png', 512],
 ];

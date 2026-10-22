@@ -1,8 +1,8 @@
 {
   "meta": {
-    "listTitle": "Esmâü'l-Hüsnâ: Allah'ın 99 İsmi ve Anlamları | Inner Hunt",
+    "listTitle": "Esmâü'l-Hüsnâ: Allah'ın 99 İsmi ve Anlamları",
     "listDescription": "Esmâü'l-Hüsnâ'nın 99 ismi Tirmizî sıralamasıyla: Arapça yazımları, anlamları, açıklamaları, Kur'an'dan ayetler ve tefekkür.",
-    "detailTitle": "{name} ({arabic}) — Anlamı | {site}"
+    "detailTitle": "{name} ({arabic}) — Anlamı"
   },
   "list": {
     "eyebrow": "Esmâü'l-Hüsnâ",
@@ -13,7 +13,8 @@
   },
   "detail": {
     "label": "{number}. Esma",
-    "backToList": "Tüm isimler",
+    "breadcrumbHome": "Ana sayfa",
+    "breadcrumbList": "Esmalar",
     "breadcrumbLabel": "Sayfa konumu",
     "descriptionTitle": "Açıklama",
     "versesTitle": "Kur'an'dan",

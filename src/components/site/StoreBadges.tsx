@@ -20,15 +20,17 @@ type Props = {
   locale: Locale;
   className?: string;
   align?: "start" | "center";
+  eager?: boolean;
 };
 
-export default async function StoreBadges({ locale, className = "", align = "start" }: Props) {
+export default async function StoreBadges({ locale, className = "", align = "start", eager = false }: Props) {
   const t = await getTranslations({ locale, namespace: "common.badges" });
 
   const apple = appleBadges[locale];
   const google = googleBadges[locale];
   const scale = BADGE_HEIGHT / google.box[3];
   const googleWidth = Math.round(google.box[2] * scale);
+  const loading = eager ? "eager" : undefined;
 
   const badges = [
     {
@@ -43,6 +45,7 @@ export default async function StoreBadges({ locale, className = "", align = "sta
           width={Math.round(apple.width)}
           height={BADGE_HEIGHT}
           unoptimized
+          loading={loading}
           className="block h-10 w-auto"
         />
       ),
@@ -62,6 +65,7 @@ export default async function StoreBadges({ locale, className = "", align = "sta
             alt=""
             width={Math.round(google.size[0] * scale)}
             height={Math.round(google.size[1] * scale)}
+            loading={loading}
             className="absolute max-w-none"
             style={{ left: -google.box[0] * scale, top: -google.box[1] * scale }}
           />

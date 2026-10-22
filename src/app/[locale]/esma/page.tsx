@@ -6,7 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import EsmaAppBox from "@/components/esma/EsmaAppBox";
 import { locales } from "@/i18n/routing";
 import { getAllEsma } from "@/lib/esma";
-import { SITE_NAME, absoluteUrl, alternates, localePath } from "@/lib/site";
+import { OG_LOCALE, SITE_NAME, absoluteUrl, alternates, localePath } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!hasLocale(locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: "esma.meta" });
   const url = absoluteUrl(locale, "/esma");
+  const images = [{ url: localePath(locale, "/opengraph-image"), width: 1200, height: 630, alt: SITE_NAME }];
 
   return {
     title: t("listTitle"),
@@ -31,13 +32,15 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       title: t("listTitle"),
       description: t("listDescription"),
       siteName: SITE_NAME,
-      locale,
-      alternateLocale: locales.filter((l) => l !== locale),
+      locale: OG_LOCALE[locale],
+      alternateLocale: locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
+      images,
     },
     twitter: {
       card: "summary_large_image",
       title: t("listTitle"),
       description: t("listDescription"),
+      images,
     },
   };
 }

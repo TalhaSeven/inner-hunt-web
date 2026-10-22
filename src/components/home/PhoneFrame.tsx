@@ -21,7 +21,6 @@ export default function PhoneFrame({ screen, alt, sizes, priority = false, class
           width={screen.width}
           height={screen.height}
           sizes={sizes}
-          preload={priority}
           fetchPriority={priority ? "high" : undefined}
           loading={priority ? "eager" : undefined}
         />

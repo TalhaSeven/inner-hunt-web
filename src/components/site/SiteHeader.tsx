@@ -22,13 +22,14 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
         <Link
           href={home}
           aria-label={t("home")}
-          className="flex min-h-11 items-center gap-3"
+          className="flex min-h-11 shrink-0 items-center gap-3"
         >
           <Image
             src="/icon-192.png"
             alt=""
             width={32}
             height={32}
+            loading="eager"
             className="rounded-lg"
           />
           <span className="font-cinzel text-sm tracking-[0.25em] whitespace-nowrap text-text uppercase max-[399px]:sr-only sm:text-base">

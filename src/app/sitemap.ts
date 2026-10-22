@@ -1,10 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { esmaCore } from '@/content/esma';
 import { locales } from '@/i18n/routing';
-import { ESMA_PAGES_ENABLED, absoluteUrl, alternates } from '@/lib/site';
-
-// Build zamanında bir kez hesaplanır; statik sitemap'teki bütün adresler aynı tarihi taşır.
-const lastModified = new Date();
+import { ESMA_PAGES_ENABLED, absoluteUrl } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const paths = [
@@ -17,8 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return paths.flatMap((path) =>
         locales.map((locale) => ({
             url: absoluteUrl(locale, path),
-            lastModified,
-            alternates: { languages: alternates(path) },
         })),
     );
 }

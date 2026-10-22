@@ -12,7 +12,17 @@ import PrivacyStrip from "@/components/home/PrivacyStrip";
 import ReminderSection from "@/components/home/ReminderSection";
 import SourcesSection from "@/components/home/SourcesSection";
 import { locales } from "@/i18n/routing";
-import { SITE_NAME, absoluteUrl, alternates } from "@/lib/site";
+import {
+  APP_STORE_URL,
+  OG_LOCALE,
+  ORGANIZATION_ID,
+  PLAY_STORE_URL,
+  SITE_NAME,
+  SITE_URL,
+  WEBSITE_ID,
+  absoluteUrl,
+  alternates,
+} from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -31,7 +41,7 @@ export async function generateMetadata({
   const url = absoluteUrl(locale, "/");
 
   return {
-    title: t("title"),
+    title: { absolute: t("title") },
     description: t("description"),
     alternates: {
       canonical: url,
@@ -43,8 +53,8 @@ export async function generateMetadata({
       url,
       type: "website",
       siteName: SITE_NAME,
-      locale,
-      alternateLocale: locales.filter((item) => item !== locale),
+      locale: OG_LOCALE[locale],
+      alternateLocale: locales.filter((item) => item !== locale).map((item) => OG_LOCALE[item]),
     },
     twitter: {
       card: "summary_large_image",
@@ -63,8 +73,48 @@ export default async function HomePage({
   if (!hasLocale(locales, locale)) notFound();
   setRequestLocale(locale);
 
+  const t = await getTranslations({ locale, namespace: "common.meta" });
+  const storeApps = [
+    { url: APP_STORE_URL, operatingSystem: "iOS" },
+    { url: PLAY_STORE_URL, operatingSystem: "Android" },
+  ].filter((app): app is { url: string; operatingSystem: string } => Boolean(app.url));
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": WEBSITE_ID,
+        name: SITE_NAME,
+        url: `${SITE_URL}/`,
+        inLanguage: locale,
+        publisher: { "@id": ORGANIZATION_ID },
+      },
+      ...storeApps.map((app) => ({
+        "@type": "MobileApplication",
+        name: SITE_NAME,
+        description: t("description"),
+        operatingSystem: app.operatingSystem,
+        applicationCategory: "LifestyleApplication",
+        installUrl: app.url,
+        inLanguage: [...locales],
+        image: `${SITE_URL}/icon-512.png`,
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        publisher: { "@id": ORGANIZATION_ID },
+      })),
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
+      />
       <HeroSection locale={locale} />
       <DailySection locale={locale} />
       <MoodsSection locale={locale} />

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Destek ve Sık Sorulan Sorular — Inner Hunt",
+    "title": "Destek ve Sık Sorulan Sorular",
     "description": "Inner Hunt hakkında sık sorulan sorular: hatırlatıcı, dil ayarı, Günün Esması, zikir sayısı, mealler ve verilerin. Yanıtını bulamadığın sorular için bize yaz."
   },
   "label": "Destek",
@@ -44,6 +44,7 @@
   "contact": {
     "title": "Bize yaz",
     "body": "Burada yanıtını bulamadığın bir soru, karşılaştığın bir hata ya da içerikle ilgili bir düzeltme önerin varsa e-posta gönder. Hata bildirirken cihaz modelini ve Ayarlar ekranının altında yazan sürüm numarasını eklemen işimizi kolaylaştırır.",
-    "emailLabel": "E-posta"
+    "emailLabel": "E-posta",
+    "developer": "Inner Hunt, Türkiye'de bağımsız geliştirici {name} tarafından geliştirilir."
   }
 }

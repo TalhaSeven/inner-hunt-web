@@ -10,7 +10,8 @@
     "sync:content": "node --experimental-strip-types scripts/sync-content.ts",
     "sync:assets": "node --experimental-strip-types scripts/sync-assets.ts",
     "sync:icons": "node --experimental-strip-types scripts/sync-icons.ts",
-    "sync": "pnpm sync:content && pnpm sync:assets && pnpm sync:icons"
+    "sync": "pnpm sync:content && pnpm sync:assets && pnpm sync:icons",
+    "indexnow": "node --experimental-strip-types scripts/indexnow.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^1.6.1",

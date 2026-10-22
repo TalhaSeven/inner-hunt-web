@@ -44,10 +44,18 @@ Hepsi isteğe bağlıdır. Boş bırakılan her değişkenin ilgili özelliği g
 |---|---|---|
 | `pnpm sync:content` | `src/content/{esma.ts,moods.ts,esma.tr.json,esma.en.json}`, `src/i18n/{tr,en}.json` içindeki `mood.moods` | `src/content/` (`moods.{tr,en}.json` dahil) |
 | `pnpm sync:assets` | `store-assets/{ios,play}/{tr,en}/phone-*.png` | `public/screens/{tr,en}/` ve `src/content/screens.ts` |
-| `pnpm sync:icons` | `assets/images/icon.png` | `src/app/icon.png`, `src/app/apple-icon.png`, `public/icon-192.png`, `public/icon-512.png` |
+| `pnpm sync:icons` | `assets/images/icon.png` | `src/app/icon.png`, `src/app/apple-icon.png`, `public/apple-touch-icon.png`, `public/icon-192.png`, `public/icon-512.png` |
 | `pnpm sync` | Üçünü sırayla çalıştırır | |
 
 Akış: mobil depoda içerik ya da görsel değişir → bu depoda `pnpm sync` → `git diff` ile değişiklikleri kontrol et → `pnpm build` → commit.
+
+## IndexNow (`pnpm indexnow`)
+
+IndexNow, değişen adresleri Bing ve Yandex'e tarama beklemeden bildirir. Google katılımcı değildir; Google için sitemap ve Search Console kullanılır. Anahtar dosyası `public/<anahtar>.txt` içindedir.
+
+- İlk gönderim: deploy sonrası bir kez `pnpm indexnow --sitemap` çalıştır. Canlı sitemap'teki bütün adresleri gönderir.
+- Sonraki gönderimler: yalnız değişen adresleri ver, ör. `pnpm indexnow https://www.innerhunt.com/esma/1`.
+- `--dry-run` istek gövdesini yazdırır, istek atmaz. `www.innerhunt.com` dışındaki adresler atlanır.
 
 ## Yeni dil ekleme
 

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "listTitle": "Asma ul-Husna: The 99 Names of Allah and Their Meanings | Inner Hunt",
+    "listTitle": "Asma ul-Husna: The 99 Names of Allah and Their Meanings",
     "listDescription": "The 99 Names of Allah in the order narrated by Tirmidhi: Arabic script, meanings, explanations, verses from the Qur'an and reflections.",
-    "detailTitle": "{name} ({arabic}) — Meaning | {site}"
+    "detailTitle": "{name} ({arabic}) — Meaning"
   },
   "list": {
     "eyebrow": "Asma ul-Husna",
@@ -13,7 +13,8 @@
   },
   "detail": {
     "label": "Name {number}",
-    "backToList": "All Names",
+    "breadcrumbHome": "Home",
+    "breadcrumbList": "The 99 Names",
     "breadcrumbLabel": "Breadcrumb",
     "descriptionTitle": "About",
     "versesTitle": "From the Qur'an",

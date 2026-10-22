@@ -11,7 +11,7 @@ import moodsTr from "@/content/moods.tr.json";
 import { moodById, type MoodId } from "@/content/moods";
 import { locales, type Locale } from "@/i18n/routing";
 import { getEsma, parseEsmaNumber, type Esma } from "@/lib/esma";
-import { SITE_NAME, SITE_URL, absoluteUrl, alternates, localePath } from "@/lib/site";
+import { OG_LOCALE, ORGANIZATION_ID, SITE_NAME, SITE_URL, absoluteUrl, alternates, localePath } from "@/lib/site";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { locale, esma } = resolved;
   const t = await getTranslations({ locale, namespace: "esma.meta" });
   const path = `/esma/${esma.number}`;
-  const title = t("detailTitle", { name: esma.name, arabic: esma.arabic, site: SITE_NAME });
+  const title = t("detailTitle", { name: esma.name, arabic: esma.arabic });
   const url = absoluteUrl(locale, path);
 
   return {
@@ -52,13 +52,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       languages: alternates(path),
     },
     openGraph: {
-      type: "article",
+      type: "website",
       url,
       title,
       description: esma.meaning,
       siteName: SITE_NAME,
-      locale,
-      alternateLocale: locales.filter((l) => l !== locale),
+      locale: OG_LOCALE[locale],
+      alternateLocale: locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
     },
     twitter: {
       card: "summary_large_image",
@@ -80,20 +80,35 @@ export default async function EsmaDetailPage({ params }: { params: Params }) {
   const listHref = localePath(locale, "/esma");
   const url = absoluteUrl(locale, `/esma/${esma.number}`);
 
+  const breadcrumbs = [
+    { name: t("breadcrumbHome"), href: localePath(locale, "/"), item: absoluteUrl(locale, "/") },
+    { name: t("breadcrumbList"), href: listHref, item: absoluteUrl(locale, "/esma") },
+    { name: esma.name, href: undefined, item: url },
+  ];
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: `${esma.name} (${esma.arabic})`,
-    description: esma.meaning,
-    inLanguage: locale,
-    url,
-    mainEntityOfPage: url,
-    publisher: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/icon-512.png` },
-    },
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: `${esma.name} (${esma.arabic})`,
+        description: esma.meaning,
+        inLanguage: locale,
+        url,
+        mainEntityOfPage: url,
+        image: `${SITE_URL}/${locale}/esma/${esma.number}/opengraph-image`,
+        publisher: { "@id": ORGANIZATION_ID },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbs.map((crumb, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: crumb.name,
+          item: crumb.item,
+        })),
+      },
+    ],
   };
 
   const pager = [
@@ -111,13 +126,22 @@ export default async function EsmaDetailPage({ params }: { params: Params }) {
       />
 
       <nav aria-label={t("breadcrumbLabel")}>
-        <Link
-          href={listHref}
-          className="inline-flex min-h-11 items-center gap-2 text-sm text-text-dim transition-colors hover:text-gold"
-        >
-          <span aria-hidden="true">←</span>
-          {t("backToList")}
-        </Link>
+        <ol className="flex min-w-0 items-center gap-2 text-sm whitespace-nowrap text-text-dim">
+          {breadcrumbs.map((crumb, i) => (
+            <li key={crumb.item} className={`flex items-center gap-2 ${crumb.href ? "shrink-0" : "min-w-0"}`}>
+              {i > 0 ? <span aria-hidden="true">›</span> : null}
+              {crumb.href ? (
+                <Link href={crumb.href} className="inline-flex min-h-11 items-center transition-colors hover:text-gold">
+                  {crumb.name}
+                </Link>
+              ) : (
+                <span aria-current="page" className="truncate text-text">
+                  {crumb.name}
+                </span>
+              )}
+            </li>
+          ))}
+        </ol>
       </nav>
 
       <header className="flex flex-col items-center pt-8 pb-12 text-center">

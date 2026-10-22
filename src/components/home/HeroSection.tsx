@@ -27,7 +27,7 @@ export default async function HeroSection({ locale }: { locale: Locale }) {
           <p className="max-w-xl text-base leading-relaxed text-pretty text-text-dim sm:text-lg">
             {t("subtitle")}
           </p>
-          <StoreBadges locale={locale} className="mt-2 justify-center lg:justify-start" />
+          <StoreBadges locale={locale} eager className="mt-2 justify-center lg:justify-start" />
           <p className="text-sm tracking-wide text-text-dim">{t("note")}</p>
         </div>
         <div className="relative flex justify-center">

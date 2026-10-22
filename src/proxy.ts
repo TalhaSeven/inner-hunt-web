@@ -31,12 +31,20 @@ export default function proxy(request: NextRequest) {
     if (locale) {
         const storeUrl = storeUrlFor(request.headers.get('user-agent') ?? '');
         if (storeUrl) return NextResponse.redirect(storeUrl, 307);
-        return NextResponse.redirect(new URL(localePath(locale), request.url), 307);
+        const url = request.nextUrl.clone();
+        url.pathname = localePath(locale);
+        return NextResponse.redirect(url, 307);
     }
 
     // Next, varsayılan dilin OG görsel adresini /tr/ önekiyle üretir; yönlendirmeden doğrudan sun.
     if (pathname.startsWith(`/${defaultLocale}/`) && pathname.includes('/opengraph-image')) {
         return NextResponse.next();
+    }
+
+    if (pathname === `/${defaultLocale}` || pathname.startsWith(`/${defaultLocale}/`)) {
+        const url = request.nextUrl.clone();
+        url.pathname = pathname.slice(defaultLocale.length + 1) || '/';
+        return NextResponse.redirect(url, 308);
     }
 
     return intlMiddleware(request);

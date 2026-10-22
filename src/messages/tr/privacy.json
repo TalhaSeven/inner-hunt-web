@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Gizlilik Politikası — Inner Hunt",
+    "title": "Gizlilik Politikası",
     "description": "Inner Hunt kişisel veri toplamaz: hesap yok, uygulama ağ isteği yapmaz ve internetsiz çalışır. Web sitesi yalnızca çerezsiz, anonim ve toplu istatistik tutar."
   },
   "label": "Gizlilik",
@@ -51,6 +51,7 @@
   },
   "contact": {
     "title": "İletişim",
-    "body": "Gizlilikle ilgili her soru için bize yazabilirsin:"
+    "body": "Gizlilikle ilgili her soru için bize yazabilirsin:",
+    "developer": "Inner Hunt, Türkiye'de bağımsız geliştirici {name} tarafından geliştirilir."
   }
 }

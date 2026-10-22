@@ -4,7 +4,7 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n/routing";
-import { SITE_NAME, SUPPORT_EMAIL, absoluteUrl, alternates, localePath } from "@/lib/site";
+import { DEVELOPER_NAME, OG_LOCALE, SITE_NAME, SUPPORT_EMAIL, absoluteUrl, alternates, localePath } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -44,7 +44,7 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
       url,
-      locale,
+      locale: OG_LOCALE[locale],
       type: "website",
       siteName: SITE_NAME,
       images,
@@ -145,6 +145,9 @@ export default async function SupportPage({
           >
             {SUPPORT_EMAIL}
           </a>
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-text-dim">
+          {t("contact.developer", { name: DEVELOPER_NAME })}
         </p>
       </section>
     </article>

@@ -3,7 +3,7 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n/routing";
-import { SITE_NAME, SUPPORT_EMAIL, absoluteUrl, alternates, localePath } from "@/lib/site";
+import { DEVELOPER_NAME, OG_LOCALE, SITE_NAME, SUPPORT_EMAIL, absoluteUrl, alternates, localePath } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -49,7 +49,7 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
       url,
-      locale,
+      locale: OG_LOCALE[locale],
       type: "website",
       siteName: SITE_NAME,
       images,
@@ -133,7 +133,7 @@ export default async function PrivacyPage({
                   <li key={policy.key}>
                     <a
                       href={policy.href}
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       target="_blank"
                       className="inline-flex min-h-11 items-center text-sm text-gold underline decoration-gold/40 underline-offset-4 transition-colors hover:text-gold-light"
                     >
@@ -145,12 +145,17 @@ export default async function PrivacyPage({
             ) : null}
 
             {id === "contact" ? (
-              <a
-                href={`mailto:${SUPPORT_EMAIL}`}
-                className="mt-3 inline-flex min-h-11 items-center text-lg text-gold underline decoration-gold/40 underline-offset-4 transition-colors hover:text-gold-light"
-              >
-                {SUPPORT_EMAIL}
-              </a>
+              <>
+                <a
+                  href={`mailto:${SUPPORT_EMAIL}`}
+                  className="mt-3 inline-flex min-h-11 items-center text-lg text-gold underline decoration-gold/40 underline-offset-4 transition-colors hover:text-gold-light"
+                >
+                  {SUPPORT_EMAIL}
+                </a>
+                <p className="mt-4 text-sm leading-relaxed text-text-dim">
+                  {t("contact.developer", { name: DEVELOPER_NAME })}
+                </p>
+              </>
             ) : null}
           </section>
         ))}

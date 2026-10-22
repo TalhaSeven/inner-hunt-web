@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Privacy Policy — Inner Hunt",
+    "title": "Privacy Policy",
     "description": "Inner Hunt collects no personal data: no account, the app makes no network requests and works offline. The website keeps only cookieless, anonymous, aggregate statistics."
   },
   "label": "Privacy",
@@ -51,6 +51,7 @@
   },
   "contact": {
     "title": "Contact",
-    "body": "For any question about privacy, write to us:"
+    "body": "For any question about privacy, write to us:",
+    "developer": "Inner Hunt is developed by {name}, an independent developer based in Türkiye."
   }
 }

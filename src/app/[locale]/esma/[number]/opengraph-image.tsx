@@ -7,7 +7,9 @@ import { getTranslations } from "next-intl/server";
 import { esmaCore } from "@/content/esma";
 import { locales } from "@/i18n/routing";
 import { getEsma, parseEsmaNumber } from "@/lib/esma";
+import { SITE_NAME } from "@/lib/site";
 
+export const alt = SITE_NAME;
 export const dynamic = "force-static";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

@@ -19,7 +19,7 @@ const securityHeaders = [
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   {
     key: 'Permissions-Policy',
-    value: 'camera=(), microphone=(), geolocation=(), payment=()'
+    value: 'camera=(), microphone=(), geolocation=(), payment=(), unload=()'
   },
   {
     key: 'Content-Security-Policy',
@@ -41,6 +41,7 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   experimental: {
     inlineCss: true,
+    globalNotFound: true,
   },
   compiler: {
     removeConsole:

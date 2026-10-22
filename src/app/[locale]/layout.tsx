@@ -10,13 +10,12 @@ import SiteHeader from "@/components/site/SiteHeader";
 import { locales } from "@/i18n/routing";
 import {
   APP_STORE_ID,
-  APP_STORE_URL,
-  PLAY_STORE_URL,
+  DEVELOPER_NAME,
+  OG_LOCALE,
+  ORGANIZATION_ID,
   SITE_NAME,
   SITE_URL,
   SUPPORT_EMAIL,
-  absoluteUrl,
-  alternates,
   localePath,
 } from "@/lib/site";
 
@@ -55,26 +54,21 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!hasLocale(locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: "common.meta" });
-  const canonicalUrl = absoluteUrl(locale, "/");
   // Dosya tabanlı OG adresi varsayılan dilde /tr önekiyle üretilip yönlendirildiği için adres açıkça verilir.
   const images = [{ url: localePath(locale, "/opengraph-image"), width: 1200, height: 630, alt: SITE_NAME }];
 
   return {
     metadataBase: new URL(SITE_URL),
-    title: t("title"),
+    title: { default: t("title"), template: `%s | ${SITE_NAME}` },
     description: t("description"),
     applicationName: SITE_NAME,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: alternates("/"),
-    },
+    robots: { "max-image-preview": "large" },
     openGraph: {
       title: t("title"),
       description: t("description"),
-      locale,
-      alternateLocale: locales.filter((l) => l !== locale),
+      locale: OG_LOCALE[locale],
+      alternateLocale: locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
       type: "website",
-      url: canonicalUrl,
       siteName: SITE_NAME,
       images,
     },
@@ -103,42 +97,15 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: "common.meta" });
-
-  const organizationId = `${SITE_URL}/#organization`;
-  const storeApps = [
-    { url: APP_STORE_URL, operatingSystem: "iOS" },
-    { url: PLAY_STORE_URL, operatingSystem: "Android" },
-  ].filter((app): app is { url: string; operatingSystem: string } => Boolean(app.url));
-
   const structuredData = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": organizationId,
-        name: SITE_NAME,
-        url: SITE_URL,
-        logo: `${SITE_URL}/icon-512.png`,
-        email: SUPPORT_EMAIL,
-      },
-      ...storeApps.map((app) => ({
-        "@type": "MobileApplication",
-        name: SITE_NAME,
-        description: t("description"),
-        operatingSystem: app.operatingSystem,
-        applicationCategory: "LifestyleApplication",
-        installUrl: app.url,
-        inLanguage: [...locales],
-        image: `${SITE_URL}/icon-512.png`,
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-        },
-        publisher: { "@id": organizationId },
-      })),
-    ],
+    "@type": "Organization",
+    "@id": ORGANIZATION_ID,
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/icon-512.png`,
+    email: SUPPORT_EMAIL,
+    founder: { "@type": "Person", name: DEVELOPER_NAME },
   };
 
   return (
@@ -159,7 +126,7 @@ export default async function LocaleLayout({
           {children}
         </main>
         <SiteFooter locale={locale} />
-        <AxeProvider />
+        {process.env.NODE_ENV === "development" ? <AxeProvider /> : null}
         <VercelAnalytics />
       </body>
     </html>
