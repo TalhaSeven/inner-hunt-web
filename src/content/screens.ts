@@ -9,64 +9,64 @@ export const screens: Record<Locale, Screen[]> = {
         {
             "name": "bugun",
             "src": "/screens/tr/phone-01-bugun.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         },
         {
             "name": "esma-detay",
             "src": "/screens/tr/phone-02-esma-detay.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         },
         {
             "name": "ayet-tefekkur",
             "src": "/screens/tr/phone-03-ayet-tefekkur.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         },
         {
             "name": "kutuphane",
             "src": "/screens/tr/phone-04-kutuphane.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         },
         {
             "name": "ayarlar",
             "src": "/screens/tr/phone-05-ayarlar.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         }
     ],
     "en": [
         {
             "name": "bugun",
             "src": "/screens/en/phone-01-bugun.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         },
         {
             "name": "esma-detay",
             "src": "/screens/en/phone-02-esma-detay.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         },
         {
             "name": "ayet-tefekkur",
             "src": "/screens/en/phone-03-ayet-tefekkur.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         },
         {
             "name": "kutuphane",
             "src": "/screens/en/phone-04-kutuphane.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         },
         {
             "name": "ayarlar",
             "src": "/screens/en/phone-05-ayarlar.png",
-            "width": 1080,
-            "height": 1920
+            "width": 1320,
+            "height": 2868
         }
     ]
 };
