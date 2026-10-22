@@ -40,3 +40,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# >>> dual-agent v2
+.plans/
+.claude/dual-agent-yedek/
+.claude/ogrenme/metrik.jsonl
+# <<< dual-agent v2

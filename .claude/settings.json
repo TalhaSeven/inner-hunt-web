@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "ask": [
+      "Edit(/.claude/settings.json)",
+      "Edit(/.claude/settings.local.json)"
+    ]
+  }
+}

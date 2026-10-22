@@ -1,0 +1,18 @@
+{
+  "surum": "2.0.0",
+  "kurulum": "2026-10-13T22:37:29.178Z",
+  "son_calisma": "2026-10-13T22:37:29.178Z",
+  "v1": {
+    "durum": "v1-saf",
+    "yedek": "20261014-013729"
+  },
+  "eklenen_izinler": {
+    "ask": [
+      "Edit(/.claude/settings.json)",
+      "Edit(/.claude/settings.local.json)"
+    ]
+  },
+  "yedekler": [
+    "20261014-013729"
+  ]
+}
