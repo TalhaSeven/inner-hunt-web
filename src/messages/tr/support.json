@@ -45,6 +45,6 @@
     "title": "Bize yaz",
     "body": "Burada yanıtını bulamadığın bir soru, karşılaştığın bir hata ya da içerikle ilgili bir düzeltme önerin varsa e-posta gönder. Hata bildirirken cihaz modelini ve Ayarlar ekranının altında yazan sürüm numarasını eklemen işimizi kolaylaştırır.",
     "emailLabel": "E-posta",
-    "developer": "Inner Hunt, Türkiye'de bağımsız geliştirici {name} tarafından geliştirilir."
+    "developer": "Inner Hunt, geliştirici <developer>{name}</developer> tarafından geliştirildi."
   }
 }

@@ -4,7 +4,7 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n/routing";
-import { DEVELOPER_NAME, OG_LOCALE, SITE_NAME, SUPPORT_EMAIL, absoluteUrl, alternates, localePath } from "@/lib/site";
+import { DEVELOPER_NAME, DEVELOPER_URL, OG_LOCALE, SITE_NAME, SUPPORT_EMAIL, absoluteUrl, alternates, localePath } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -147,7 +147,18 @@ export default async function SupportPage({
           </a>
         </p>
         <p className="mt-4 text-sm leading-relaxed text-text-dim">
-          {t("contact.developer", { name: DEVELOPER_NAME })}
+          {t.rich("contact.developer", {
+            name: DEVELOPER_NAME,
+            developer: (chunks) => (
+              <a
+                href={`${DEVELOPER_URL}/${locale}`}
+                target="_blank"
+                className="text-gold underline decoration-gold/40 underline-offset-4 transition-colors hover:text-gold-light"
+              >
+                {chunks}
+              </a>
+            ),
+          })}
         </p>
       </section>
     </article>

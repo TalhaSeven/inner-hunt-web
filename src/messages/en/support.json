@@ -45,6 +45,6 @@
     "title": "Write to us",
     "body": "If you have a question not answered here, have run into a bug or want to suggest a correction to the content, send an email. When reporting a bug, including your device model and the version number shown at the bottom of the Settings screen helps us a lot.",
     "emailLabel": "Email",
-    "developer": "Inner Hunt is developed by {name}, an independent developer based in Türkiye."
+    "developer": "Inner Hunt was developed by <developer>{name}</developer>."
   }
 }

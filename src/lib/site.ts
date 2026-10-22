@@ -5,6 +5,7 @@ export const SITE_URL = 'https://www.innerhunt.com';
 export const SITE_NAME = 'Inner Hunt';
 export const SUPPORT_EMAIL = 'info@talhaseven.com';
 export const DEVELOPER_NAME = 'Talha Seven';
+export const DEVELOPER_URL = 'https://talhaseven.com';
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const APP_PACKAGE_ID = 'com.innerhunt.app';
