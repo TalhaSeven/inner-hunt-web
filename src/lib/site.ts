@@ -13,6 +13,7 @@ export const APP_PACKAGE_ID = 'com.innerhunt.app';
 export const APP_STORE_URL = process.env.NEXT_PUBLIC_APP_STORE_URL || undefined;
 export const PLAY_STORE_URL = process.env.NEXT_PUBLIC_PLAY_STORE_URL || undefined;
 export const APP_STORE_ID = APP_STORE_URL?.match(/id(\d+)/)?.[1];
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || undefined;
 export const ESMA_PAGES_ENABLED = process.env.ESMA_PAGES_ENABLED === 'true';
 
 export const OG_LOCALE: Record<Locale, string> = { tr: 'tr_TR', en: 'en_US' };

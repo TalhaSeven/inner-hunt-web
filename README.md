@@ -10,6 +10,7 @@ Inner Hunt; Esmâü'l-Hüsnâ ile günlük tefekkür uygulamasıdır: her gün b
 - next-intl 4 — Türkçe (varsayılan, öneksiz) ve İngilizce (`/en`)
 - Tailwind CSS v4
 - Vercel Analytics ve Speed Insights (çerezsiz)
+- Google Analytics 4 (isteğe bağlı, çerezli; `@next/third-parties`)
 
 ## Geliştirme
 
@@ -29,6 +30,7 @@ Hepsi isteğe bağlıdır. Boş bırakılan her değişkenin ilgili özelliği g
 |---|---|---|
 | `NEXT_PUBLIC_APP_STORE_URL` | App Store sayfası. App Store ID bu adresteki `id<rakamlar>` kısmından türetilir. | App Store rozeti pasif ve "Yakında" etiketli; iOS Smart Banner ve iOS `MobileApplication` JSON-LD'si yok |
 | `NEXT_PUBLIC_PLAY_STORE_URL` | Google Play sayfası | Play rozeti pasif ve "Yakında" etiketli; Android `MobileApplication` JSON-LD'si yok |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics 4 ölçüm kimliği (`G-XXXXXXXXXX`) | Google Analytics yüklenmez; site `_ga` çerezi yazmaz |
 | `ESMA_PAGES_ENABLED` | `true` ise `/esma` sayfaları yayımlanır | `/esma` adresleri 307 ile ana sayfaya yönlenir; sitemap'te ve ana sayfada yer almaz |
 | `APPLE_TEAM_ID` | `/.well-known/apple-app-site-association` (Universal Links) için | Dosya 404 döner |
 | `ANDROID_SHA256_CERT_FINGERPRINTS` | `/.well-known/assetlinks.json` (App Links) için; virgülle ayrılmış SHA-256 parmak izleri | Dosya 404 döner |

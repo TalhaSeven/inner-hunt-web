@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { Amiri, Cinzel, Outfit } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import AxeProvider from "@/components/providers/AxeProvider";
 import VercelAnalytics from "@/components/providers/VercelAnalytics";
 import SiteFooter from "@/components/site/SiteFooter";
@@ -11,6 +12,7 @@ import { locales } from "@/i18n/routing";
 import {
   APP_STORE_ID,
   DEVELOPER_NAME,
+  GA_MEASUREMENT_ID,
   OG_LOCALE,
   ORGANIZATION_ID,
   SITE_NAME,
@@ -129,6 +131,7 @@ export default async function LocaleLayout({
         {process.env.NODE_ENV === "development" ? <AxeProvider /> : null}
         <VercelAnalytics />
       </body>
+      {GA_MEASUREMENT_ID ? <GoogleAnalytics gaId={GA_MEASUREMENT_ID} /> : null}
     </html>
   );
 }

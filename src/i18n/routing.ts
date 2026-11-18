@@ -13,7 +13,7 @@ export const routing = defineRouting({
     localePrefix: 'as-needed',
     // hreflang bağlantıları metadata'da üretiliyor; Link başlığıyla tekrar edilmesin.
     alternateLinks: false,
-    // URL'deki dil esas; site çerez yazmaz.
+    // URL'deki dil esas; dil için çerez yazılmaz.
     localeDetection: false,
     localeCookie: false,
 });

@@ -1,16 +1,16 @@
 {
   "meta": {
     "title": "Privacy Policy",
-    "description": "Inner Hunt collects no personal data: no account, the app makes no network requests and works offline. The website keeps only cookieless, anonymous, aggregate statistics."
+    "description": "The Inner Hunt app collects no personal data: no account, the app makes no network requests and works offline. The website uses Vercel Analytics and Google Analytics for visit statistics."
   },
   "label": "Privacy",
   "title": "Privacy Policy",
   "lastUpdated": "Last updated",
-  "updatedAt": "2026-09-25",
+  "updatedAt": "2026-11-19",
   "tocLabel": "On this page",
   "summary": {
     "title": "Summary",
-    "body": "The Inner Hunt mobile app collects no personal data. There is no account, the app makes no network requests and it works offline. This website keeps only anonymous, aggregate visit statistics without cookies."
+    "body": "The Inner Hunt mobile app collects no personal data. There is no account, the app makes no network requests and it works offline. This website keeps visit statistics; for this, Google Analytics stores cookies in your browser."
   },
   "app": {
     "title": "Mobile app",
@@ -29,7 +29,9 @@
     "title": "Website",
     "items": [
       "Vercel Analytics is used for visit statistics and Vercel Speed Insights for measuring page speed. These tools use no cookies and do not track you across sites; information such as the page viewed, country, browser and device type, and page load time is processed anonymously and in aggregate.",
-      "The site does not use cookies.",
+      "Google Analytics is also used for visit statistics. Google Analytics stores cookies whose names start with \"_ga\" in your browser; these cookies carry a random identifier that distinguishes your browser and are kept for up to two years. Information such as the page viewed, approximate location, and browser and device type is processed by Google.",
+      "You can delete or block Google Analytics cookies in your browser settings. Google's \"Google Analytics Opt-out Browser Add-on\" also turns the measurement off.",
+      "The site uses no cookies other than the Google Analytics cookies.",
       "Fonts are served from the site's own server; no requests are made to third-party servers such as Google Fonts.",
       "The site is hosted on Vercel. Standard connection information such as your IP address is processed by the hosting infrastructure in order to deliver pages to you.",
       "The site has no forms, memberships or email newsletters."
