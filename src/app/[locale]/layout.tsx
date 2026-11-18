@@ -3,8 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { Amiri, Cinzel, Outfit } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import AxeProvider from "@/components/providers/AxeProvider";
+import GoogleAnalytics from "@/components/providers/GoogleAnalytics";
 import VercelAnalytics from "@/components/providers/VercelAnalytics";
 import SiteFooter from "@/components/site/SiteFooter";
 import SiteHeader from "@/components/site/SiteHeader";
@@ -130,8 +130,8 @@ export default async function LocaleLayout({
         <SiteFooter locale={locale} />
         {process.env.NODE_ENV === "development" ? <AxeProvider /> : null}
         <VercelAnalytics />
+        {GA_MEASUREMENT_ID ? <GoogleAnalytics gaId={GA_MEASUREMENT_ID} /> : null}
       </body>
-      {GA_MEASUREMENT_ID ? <GoogleAnalytics gaId={GA_MEASUREMENT_ID} /> : null}
     </html>
   );
 }

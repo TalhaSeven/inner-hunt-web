@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Inner Hunt — Esmâü'l-Hüsnâ ile Günlük Tefekkür",
-    "description": "Esmâü'l-Hüsnâ ile her gün tefekkür: günün esması, hâline uygun isimler, ayetler ve günlük hatırlatıcı. Ücretsiz, reklamsız; hesap istemez, internetsiz çalışır."
+    "description": "Esmâü'l-Hüsnâ ile her gün tefekkür: günün esması, ana ekran widget'ı, hâline uygun isimler ve günlük hatırlatıcı. Ücretsiz, reklamsız, internetsiz çalışır."
   },
   "hero": {
     "eyebrow": "iOS ve Android için",
@@ -78,6 +78,15 @@
     "notificationTime": "21:00",
     "notificationTitle": "Bugünün esması: {name}"
   },
+  "widget": {
+    "eyebrow": "Ana ekran",
+    "title": "Günün esması ana ekranında",
+    "body": "Widget'ı ekle; günün esmasını Arapça yazılışı, adı ve anlamıyla uygulamayı açmadan gör. Esma her gün kendiliğinden değişir; widget'a dokununca o esmanın sayfası açılır.",
+    "local": "iPhone'da küçük, orta ve büyük boyutta; Android'de dilediğin boyutta kullanılır. Widget da internetsiz çalışır.",
+    "previewLabel": "Örnek widget",
+    "widgetLabel": "Günün Esması",
+    "howTo": "Widget ekleme adımları"
+  },
   "privacy": {
     "label": "Gizlilik",
     "noAccount": "Hesap yok",
@@ -120,6 +129,10 @@
       "reminder": {
         "question": "Hatırlatıcıyı nasıl kurarım?",
         "answer": "Ayarlar sekmesinde günlük hatırlatıcıyı aç ve saati seç; varsayılan saat 21:00'dir. Bildirim için cihazının bildirim izni açık olmalıdır."
+      },
+      "widget": {
+        "question": "Ana ekran widget'ı var mı?",
+        "answer": "Evet. Widget günün esmasını iPhone'da ve Android'de ana ekranında gösterir. Eklemek için ana ekranda boş bir yere uzun bas ve widget listesinden Inner Hunt'ı seç."
       },
       "languages": {
         "question": "Hangi dillerde kullanabilirim?",

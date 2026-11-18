@@ -3,6 +3,7 @@ import { moods, type MoodId } from "@/content/moods";
 import moodsEn from "@/content/moods.en.json";
 import moodsTr from "@/content/moods.tr.json";
 import type { Locale } from "@/i18n/routing";
+import MoodIcon from "@/components/ui/MoodIcon";
 import SectionHeading from "./SectionHeading";
 import styles from "./home.module.css";
 
@@ -30,9 +31,7 @@ export default async function MoodsSection({ locale }: { locale: Locale }) {
               className={`${styles.mood} ${styles.reveal} flex flex-col gap-3 border border-border p-4 sm:p-6`}
               style={{ "--accent": mood.accentColor } as React.CSSProperties}
             >
-              <span aria-hidden="true" className="text-2xl leading-none sm:text-3xl">
-                {mood.emoji}
-              </span>
+              <MoodIcon id={mood.id} className="size-7 sm:size-8" />
               <h3 className="text-[0.95rem] leading-snug font-medium text-text sm:text-base">
                 {texts[mood.id].name}
               </h3>

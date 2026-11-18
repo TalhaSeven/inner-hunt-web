@@ -3,6 +3,7 @@ import Link from "next/link";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import OpenDetailsOnHash from "@/components/ui/OpenDetailsOnHash";
 import { locales } from "@/i18n/routing";
 import { DEVELOPER_NAME, DEVELOPER_URL, OG_LOCALE, SITE_NAME, SUPPORT_EMAIL, absoluteUrl, alternates, localePath } from "@/lib/site";
 
@@ -15,6 +16,7 @@ const faqIds = [
   "changeTime",
   "changeLanguage",
   "dailyEsma",
+  "addWidget",
   "dhikrCount",
   "translations",
   "whereData",
@@ -102,6 +104,7 @@ export default async function SupportPage({
         <h2 id="faq-title" className="font-cinzel text-xl text-gold-light">
           {t("faqTitle")}
         </h2>
+        <OpenDetailsOnHash />
         <div className="mt-6 divide-y divide-border border-y border-border">
           {faqIds.map((id) => (
             <details key={id} id={id} className="group">

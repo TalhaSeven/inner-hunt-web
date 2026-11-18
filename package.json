@@ -14,7 +14,6 @@
     "indexnow": "node --experimental-strip-types scripts/indexnow.ts"
   },
   "dependencies": {
-    "@next/third-parties": "16.1.6",
     "@vercel/analytics": "^1.6.1",
     "@vercel/speed-insights": "^1.3.1",
     "next": "16.1.6",

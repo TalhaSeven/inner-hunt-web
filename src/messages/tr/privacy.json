@@ -17,8 +17,9 @@
     "items": [
       "Kişisel veri toplanmaz. Hesap, kayıt ya da giriş yoktur.",
       "Uygulama hiçbir ağ isteği yapmaz. Bütün içerik uygulamanın içindedir; internet bağlantısı olmadan çalışır.",
-      "Cihazında yalnızca dil tercihin ve hatırlatıcı ayarın (açık ya da kapalı, saat) saklanır. Ayrıca \"Başka göster\" aynı isimleri art arda getirmesin diye son gösterilen birkaç esmanın numarası tutulur. Bu bilgiler cihazından dışarı çıkmaz.",
+      "Cihazında dil tercihin, hatırlatıcı ayarın (açık ya da kapalı, saat) ve widget tanıtımının gösterilip gösterilmediği saklanır. Ayrıca \"Başka göster\" aynı isimleri art arda getirmesin diye son gösterilen birkaç esmanın numarası tutulur. Bu bilgiler cihazından dışarı çıkmaz.",
       "Günlük hatırlatıcı bildirimleri cihazında planlanır; bunun için bir sunucu kullanılmaz.",
+      "Ana ekran widget'ı, gösterdiği esmaları (Arapça yazılış, ad, anlam) cihazındaki widget alanından okur. Bu bilgiyi uygulama cihazında hazırlar; widget ağ isteği yapmaz.",
       "Bildirim iznini istediğin zaman cihazının sistem ayarlarından geri alabilirsin.",
       "Uygulamayı sildiğinde cihazdaki bütün verileri de silinir.",
       "\"Paylaş\" düğmesi, paylaşılacak metni cihazının paylaşım menüsüne verir; neyi, kiminle paylaşacağını sen seçersin.",
@@ -54,6 +55,6 @@
   "contact": {
     "title": "İletişim",
     "body": "Gizlilikle ilgili her soru için bize yazabilirsin:",
-    "developer": "Inner Hunt, Türkiye'de bağımsız geliştirici {name} tarafından geliştirilir."
+    "developer": "Inner Hunt, <developer>{name}</developer> tarafından geliştirildi."
   }
 }

@@ -11,6 +11,7 @@ import NamesSection from "@/components/home/NamesSection";
 import PrivacyStrip from "@/components/home/PrivacyStrip";
 import ReminderSection from "@/components/home/ReminderSection";
 import SourcesSection from "@/components/home/SourcesSection";
+import WidgetSection from "@/components/home/WidgetSection";
 import { locales } from "@/i18n/routing";
 import {
   APP_STORE_URL,
@@ -120,6 +121,7 @@ export default async function HomePage({
       <MoodsSection locale={locale} />
       <NamesSection locale={locale} />
       <ReminderSection locale={locale} />
+      <WidgetSection locale={locale} />
       <PrivacyStrip locale={locale} />
       <SourcesSection locale={locale} />
       <FaqSection locale={locale} />

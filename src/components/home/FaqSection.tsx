@@ -5,7 +5,7 @@ import { localePath } from "@/lib/site";
 import SectionHeading from "./SectionHeading";
 import styles from "./home.module.css";
 
-const faqKeys = ["price", "offline", "reminder", "languages"] as const;
+const faqKeys = ["price", "offline", "reminder", "widget", "languages"] as const;
 
 export default async function FaqSection({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "home.faq" });

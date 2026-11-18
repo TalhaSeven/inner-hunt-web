@@ -24,6 +24,10 @@
       "question": "How is the Name of the Day chosen?",
       "answer": "The Name of the Day is determined by your device's date following a fixed order, and it changes every day. This order makes sure each name appears exactly once in 99 days; after 99 days the cycle starts again. The reminder notification also shows that day's Name."
     },
+    "addWidget": {
+      "question": "How do I add the widget to my Home Screen?",
+      "answer": "On iPhone: Touch and hold an empty area of your Home Screen. Tap Edit in the top-left corner, then tap Add Widget. Choose Inner Hunt, pick a size and add it. On Android: Touch and hold an empty area of your home screen. Tap Widgets in the menu that opens. Find Inner Hunt, then touch and hold the widget and drag it to your home screen. The widget shows the Name of the Day and updates by itself every day."
+    },
     "dhikrCount": {
       "question": "What is the dhikr count?",
       "answer": "The dhikr count shown on a Name's detail page is its abjad value: the sum of the numerical values of the letters in its Arabic spelling. The leading \"al\" (alif and lam) is not counted. For example, for Ar-Rahman this number is 298."
@@ -34,7 +38,7 @@
     },
     "whereData": {
       "question": "Where is my data stored?",
-      "answer": "Only on your device. There is no account, the app makes no network requests and it works offline. The device keeps only your language preference, your reminder setting and the numbers of the last few Names shown for \"Show another\"; deleting the app deletes them too. See the <privacy>privacy policy</privacy> for details."
+      "answer": "Only on your device. There is no account, the app makes no network requests and it works offline. The device keeps only your language preference, your reminder setting, whether the widget introduction has been shown and the numbers of the last few Names shown for \"Show another\". If you add the Home Screen widget, the Names it will show are also stored on your device. Deleting the app deletes all of this too. See the <privacy>privacy policy</privacy> for details."
     },
     "price": {
       "question": "Is the app paid?",

@@ -17,8 +17,9 @@
     "items": [
       "No personal data is collected. There is no account, sign-up or sign-in.",
       "The app makes no network requests. All content is built into the app, and it works without an internet connection.",
-      "Only your language preference and your reminder setting (on or off, time) are stored on your device. The numbers of the last few names shown are also kept so that \"Show another\" does not repeat the same names in a row. This information never leaves your device.",
+      "Your language preference, your reminder setting (on or off, time) and whether the widget introduction has been shown are stored on your device. The numbers of the last few names shown are also kept so that \"Show another\" does not repeat the same names in a row. This information never leaves your device.",
       "Daily reminder notifications are scheduled on your device; no server is involved.",
+      "The Home Screen widget reads the Names it shows (Arabic, name, meaning) from widget storage on your device. The app prepares this information on your device; the widget makes no network requests.",
       "You can revoke notification permission at any time in your device's system settings.",
       "Deleting the app deletes all of its data on your device.",
       "The \"Share\" button hands the text to your device's share menu; you choose what to share and with whom.",
@@ -54,6 +55,6 @@
   "contact": {
     "title": "Contact",
     "body": "For any question about privacy, write to us:",
-    "developer": "Inner Hunt is developed by {name}, an independent developer based in Türkiye."
+    "developer": "Inner Hunt was developed by <developer>{name}</developer>."
   }
 }

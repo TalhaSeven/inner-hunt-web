@@ -10,7 +10,7 @@ Inner Hunt; Esmâü'l-Hüsnâ ile günlük tefekkür uygulamasıdır: her gün b
 - next-intl 4 — Türkçe (varsayılan, öneksiz) ve İngilizce (`/en`)
 - Tailwind CSS v4
 - Vercel Analytics ve Speed Insights (çerezsiz)
-- Google Analytics 4 (isteğe bağlı, çerezli; `@next/third-parties`)
+- Google Analytics 4 (isteğe bağlı, çerezli; `next/script` ile sayfa yüklendikten sonra iner)
 
 ## Geliştirme
 
@@ -44,7 +44,7 @@ Hepsi isteğe bağlıdır. Boş bırakılan her değişkenin ilgili özelliği g
 
 | Komut | Kaynak (mobil depo) | Hedef (bu depo) |
 |---|---|---|
-| `pnpm sync:content` | `src/content/{esma.ts,moods.ts,esma.tr.json,esma.en.json}`, `src/i18n/{tr,en}.json` içindeki `mood.moods` | `src/content/` (`moods.{tr,en}.json` dahil) |
+| `pnpm sync:content` | `src/content/{esma.ts,moods.ts,esma.tr.json,esma.en.json}`, `src/i18n/{tr,en}.json` içindeki `mood.moods`, `assets/icons/moods/*.svg` | `src/content/` (`moods.{tr,en}.json` ve `mood-icons.ts` dahil) |
 | `pnpm sync:assets` | `store-assets/{ios,play}/{tr,en}/phone-*.png` | `public/screens/{tr,en}/` ve `src/content/screens.ts` |
 | `pnpm sync:icons` | `assets/images/icon.png` | `src/app/icon.png`, `src/app/apple-icon.png`, `public/apple-touch-icon.png`, `public/icon-192.png`, `public/icon-512.png` |
 | `pnpm sync` | Üçünü sırayla çalıştırır | |

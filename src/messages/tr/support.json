@@ -24,6 +24,10 @@
       "question": "Günün Esması nasıl seçiliyor?",
       "answer": "Günün Esması, cihazının tarihine göre sabit bir sırayla belirlenir ve her gün değişir. Bu sıra 99 günde her ismin tam bir kez gelmesini sağlar; 99 gün dolunca döngü yeniden başlar. Hatırlatıcı bildirimi de o günün esmasını gösterir."
     },
+    "addWidget": {
+      "question": "Ana ekrana widget'ı nasıl eklerim?",
+      "answer": "iPhone'da: Ana ekranda boş bir yere uzun bas. Sol üstteki Düzenle'ye, sonra Widget Ekle'ye dokun. Listeden Inner Hunt'ı seç, bir boyut belirleyip ekle. Android'de: Ana ekranda boş bir yere uzun bas. Açılan menüde Widget'lar seçeneğine dokun. Inner Hunt'ı bul, widget'ı basılı tutup ana ekrana sürükle. Widget günün esmasını gösterir ve her gün kendiliğinden yenilenir."
+    },
     "dhikrCount": {
       "question": "Zikir sayısı nedir?",
       "answer": "Esma detayında gösterilen zikir sayısı, ismin ebced değeridir: Arapça yazımındaki harflerin sayı değerlerinin toplamı. Baştaki \"el\" harfleri (elif ve lâm) hesaba katılmaz. Örneğin Er-Rahmân için bu sayı 298'dir."
@@ -34,7 +38,7 @@
     },
     "whereData": {
       "question": "Verilerim nerede saklanıyor?",
-      "answer": "Yalnızca cihazında. Hesap yoktur, uygulama ağ isteği yapmaz ve internetsiz çalışır. Cihazda sadece dil tercihin, hatırlatıcı ayarın ve \"Başka göster\" için son gösterilen birkaç esmanın numarası tutulur; uygulamayı sildiğinde bunlar da silinir. Ayrıntılar için <privacy>gizlilik politikasına</privacy> bakabilirsin."
+      "answer": "Yalnızca cihazında. Hesap yoktur, uygulama ağ isteği yapmaz ve internetsiz çalışır. Cihazda sadece dil tercihin, hatırlatıcı ayarın, widget tanıtımının gösterilip gösterilmediği ve \"Başka göster\" için son gösterilen birkaç esmanın numarası tutulur. Ana ekran widget'ını eklediysen widget'ın göstereceği esmalar da cihazında saklanır. Uygulamayı sildiğinde bunlar da silinir. Ayrıntılar için <privacy>gizlilik politikasına</privacy> bakabilirsin."
     },
     "price": {
       "question": "Uygulama ücretli mi?",
@@ -45,6 +49,6 @@
     "title": "Bize yaz",
     "body": "Burada yanıtını bulamadığın bir soru, karşılaştığın bir hata ya da içerikle ilgili bir düzeltme önerin varsa e-posta gönder. Hata bildirirken cihaz modelini ve Ayarlar ekranının altında yazan sürüm numarasını eklemen işimizi kolaylaştırır.",
     "emailLabel": "E-posta",
-    "developer": "Inner Hunt, geliştirici <developer>{name}</developer> tarafından geliştirildi."
+    "developer": "Inner Hunt, <developer>{name}</developer> tarafından geliştirildi."
   }
 }

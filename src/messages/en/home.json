@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Inner Hunt — Daily Reflection on the 99 Names",
-    "description": "Reflect on the 99 Names of Allah every day: a Name for each day, Names for how you feel, Qur'anic verses and a daily reminder. Free, no ads, works offline."
+    "description": "Reflect on the 99 Names of Allah every day: a Name for each day, a Home Screen widget, Names for how you feel and a daily reminder. Free, no ads, works offline."
   },
   "hero": {
     "eyebrow": "For iOS and Android",
@@ -78,6 +78,15 @@
     "notificationTime": "21:00",
     "notificationTitle": "Today's Name: {name}"
   },
+  "widget": {
+    "eyebrow": "Home Screen",
+    "title": "The Name of the Day on your Home Screen",
+    "body": "Add the widget to see the Name of the Day in Arabic, with its name and meaning, without opening the app. It changes by itself every day; tap the widget to open that Name.",
+    "local": "Small, medium and large sizes on iPhone; resizable on Android. The widget works offline too.",
+    "previewLabel": "Sample widget",
+    "widgetLabel": "Name of the Day",
+    "howTo": "How to add the widget"
+  },
   "privacy": {
     "label": "Privacy",
     "noAccount": "No account",
@@ -120,6 +129,10 @@
       "reminder": {
         "question": "How do I set up the reminder?",
         "answer": "In the Settings tab, turn on the daily reminder and choose a time; the default is 21:00. Notifications must be allowed on your device."
+      },
+      "widget": {
+        "question": "Is there a Home Screen widget?",
+        "answer": "Yes. The widget shows the Name of the Day on your Home Screen, on iPhone and Android. To add it, touch and hold an empty area of your Home Screen and choose Inner Hunt from the widgets list."
       },
       "languages": {
         "question": "Which languages are available?",

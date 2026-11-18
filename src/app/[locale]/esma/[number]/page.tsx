@@ -5,6 +5,7 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import EsmaAppBox from "@/components/esma/EsmaAppBox";
 import EsmaSection from "@/components/esma/EsmaSection";
+import MoodIcon from "@/components/ui/MoodIcon";
 import { esmaCore } from "@/content/esma";
 import moodsEn from "@/content/moods.en.json";
 import moodsTr from "@/content/moods.tr.json";
@@ -228,7 +229,7 @@ export default async function EsmaDetailPage({ params }: { params: Params }) {
                   className="inline-flex min-h-11 items-center gap-2 border border-border border-b-2 bg-bg-card px-4 text-sm text-text"
                   style={{ borderBottomColor: `${mood.accentColor}80` }}
                 >
-                  <span aria-hidden="true">{mood.emoji}</span>
+                  <MoodIcon id={id} className="size-4 shrink-0" />
                   {moodTexts[locale][id].name}
                 </li>
               );
